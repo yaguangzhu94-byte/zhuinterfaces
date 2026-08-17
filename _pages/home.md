@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <section class="zhu-hero zhu-hero-integrated">
-  <div class="zhu-eyebrow">ZHU INTERFACES · TEXAS TECH UNIVERSITY</div>
+  <div class="zhu-eyebrow">ZHU LAB · TEXAS TECH UNIVERSITY</div>
   <div class="zhu-hero-grid">
     <div class="zhu-hero-copy-block">
       <h1>From molecular interactions<br>to <span>sustainable systems.</span></h1>
@@ -62,11 +62,44 @@ permalink: /
 
       <div class="scale-column scale-system">
         <div class="scale-heading"><b>system</b><span>SUSTAINABILITY &<br>CIRCULARITY</span></div>
-        <svg viewBox="0 0 190 240" aria-hidden="true">
-          <path class="cycle-ring" d="M57 54 C107 24 156 54 164 97"/><path class="cycle-ring" d="M163 100 C171 148 132 185 84 180"/><path class="cycle-ring" d="M82 180 C37 174 19 129 39 92"/><path class="cycle-ring" d="M40 90 C47 76 51 65 57 54"/>
-          <path class="cycle-arrow a1" d="M153 87 l12 11 -16 3"/><path class="cycle-arrow a2" d="M96 181 l-14 6 2 -16"/><path class="cycle-arrow a3" d="M38 106 l-9 -13 16 -1"/>
-          <path class="leaf" d="M95 105 C83 87 67 89 69 112 C71 130 92 137 103 124 C116 108 112 91 105 82 C103 95 99 103 95 105Z"/>
-          <path class="leaf-vein" d="M95 105 C91 116 90 123 88 132"/>
+        <svg viewBox="0 0 210 240" aria-hidden="true">
+          <g fill="none" stroke="var(--zhu-green)" stroke-width="5" stroke-linecap="round" opacity=".78">
+            <path d="M70 41 C115 18 166 42 178 82"/>
+            <path d="M180 90 C188 137 158 178 117 189"/>
+            <path d="M105 193 C59 199 23 169 18 126"/>
+            <path d="M18 115 C18 82 36 56 61 45"/>
+          </g>
+          <g fill="var(--zhu-green)"><path d="M173 71 l11 12 -16 2Z"/><path d="M129 184 l-13 12 -3 -17Z"/><path d="M27 138 l-13 -11 16 -5Z"/><path d="M50 49 l14 -10 1 17Z"/></g>
+
+          <!-- renewable-energy motif -->
+          <g transform="translate(92 28)" stroke="var(--zhu-green)" stroke-width="2" fill="none">
+            <line x1="0" y1="13" x2="0" y2="38"/>
+            <circle cx="0" cy="12" r="3" fill="var(--zhu-green)"/>
+            <path d="M0 12 L-15 4 M0 12 L12 -1 M0 12 L8 26"/>
+          </g>
+          <g transform="translate(129 33) rotate(-8)">
+            <rect x="0" y="0" width="26" height="16" rx="2" fill="rgba(91,140,98,.14)" stroke="var(--zhu-green)" stroke-width="1.7"/>
+            <path d="M9 0 V16 M18 0 V16 M0 8 H26" stroke="var(--zhu-green)" stroke-width="1"/>
+          </g>
+
+          <!-- water / separations -->
+          <path d="M31 91 C21 105 20 112 28 119 C35 125 47 120 47 110 C47 103 39 95 31 91Z" fill="rgba(45,119,113,.18)" stroke="var(--zhu-teal)" stroke-width="2"/>
+
+          <!-- central leaf -->
+          <path d="M104 101 C90 79 70 84 73 110 C75 131 99 139 111 122 C126 103 119 84 109 73 C109 87 108 96 104 101Z" fill="rgba(91,140,98,.18)" stroke="var(--zhu-green)" stroke-width="2"/>
+          <path d="M103 102 C98 116 97 126 96 139" fill="none" stroke="var(--zhu-green)" stroke-width="2"/>
+
+          <!-- generic chemicals/materials -->
+          <g transform="translate(156 111)" fill="none" stroke="var(--zhu-green)" stroke-width="2">
+            <path d="M7 0 H19 M10 0 V17 L1 36 Q0 40 5 40 H21 Q26 40 24 36 L16 17 V0"/>
+            <path d="M5 32 H21"/>
+          </g>
+
+          <!-- utilization / manufacturing -->
+          <g transform="translate(67 162)" fill="rgba(91,140,98,.18)" stroke="var(--zhu-green)" stroke-width="2">
+            <path d="M0 28 V12 L12 18 V8 L25 15 V3 L39 10 V28 Z"/>
+            <rect x="5" y="22" width="6" height="6"/><rect x="18" y="22" width="6" height="6"/><rect x="31" y="22" width="5" height="6"/>
+          </g>
         </svg>
       </div>
     </div>
@@ -115,5 +148,5 @@ permalink: /
 
 <section class="zhu-bottom-grid">
   <div class="zhu-bottom-block"><p class="zhu-section-kicker">PUBLICATIONS</p><h2>Selected work</h2><p>Research spanning selective ion transport, confined water, electrochemical interfaces, and operando characterization.</p><a href="{{ site.url }}{{ site.baseurl }}/publications" class="zhu-text-link">View publications →</a></div>
-  <div class="zhu-bottom-block"><p class="zhu-section-kicker">NEWS</p><h2>From the group</h2><p>New papers, presentations, beamtime, people, and other updates from Zhu Interfaces.</p><a href="{{ site.url }}{{ site.baseurl }}/allnews" class="zhu-text-link">View news →</a></div>
+  <div class="zhu-bottom-block"><p class="zhu-section-kicker">NEWS</p><h2>From the group</h2><p>New papers, presentations, beamtime, people, and other updates from Zhu Lab.</p><a href="{{ site.url }}{{ site.baseurl }}/allnews" class="zhu-text-link">View news →</a></div>
 </section>
