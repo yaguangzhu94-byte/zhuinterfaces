@@ -1,7 +1,7 @@
 # ============================================================
 # STEP 1: Your Identity
 # ============================================================
-name: "Zhu Interfaces"
+name: "Zhu Lab"
 title: "Interfaces · Transport · Operando"
 institution: "Texas Tech University"
 email: yaguang.zhu@ttu.edu
@@ -24,7 +24,7 @@ links:
 # ============================================================
 accent_color: "#2d7771"
 dark_mode: false
-description: "Zhu Interfaces research group at Texas Tech University — interfaces, transport, electrochemistry, and operando multiscale characterization."
+description: "Zhu Lab at Texas Tech University — interfaces, transport, electrochemistry, and operando synchrotron X-ray characterization."
 baseurl: ""
 url: "https://zhuinterfaces.com"
 
