@@ -25,8 +25,8 @@ links:
 accent_color: "#1a7a6d"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
 description: "Academic webpage of Dr. Richard Feynman"
-baseurl: ""
-url: ""
+baseurl: "/zhuinterfaces"
+url: "https://yaguangzhu94-byte.github.io"
 
 # Google Analytics — paste your GA4 measurement ID, or leave blank
 analytics:
