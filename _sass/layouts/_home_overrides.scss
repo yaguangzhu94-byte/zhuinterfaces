@@ -1,0 +1,16 @@
+// Small homepage refinements kept separate from the main layout file.
+// Match the hero typography to the serif treatment used in the Our Questions heading.
+
+.zhu-home .zhu-hero h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -.035em;
+}
+
+.zhu-home .zhu-hero h1 span {
+  color: var(--zhu-teal);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+}
