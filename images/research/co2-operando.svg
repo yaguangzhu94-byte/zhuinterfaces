@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#f8f7f2"/>
+<text x="28" y="42" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#245f5a" letter-spacing="1.5">CARBON DIOXIDE CONVERSION</text>
+<text x="28" y="80" font-family="Georgia,serif" font-size="31" fill="#202321">Operando radiography + diffraction</text>
+<image href="data:image/jpeg;base64," + b28 + "" x="28" y="120" width="340" height="206" preserveAspectRatio="xMidYMid meet"/>
+<text x="28" y="355" font-family="Arial,sans-serif" font-size="15" fill="#666">OPERANDO CELL</text>
+<path d="M390 220 H440" stroke="#2d7771" stroke-width="3"/><path d="M430 210 l14 10 -14 10" fill="#2d7771"/>
+<image href="data:image/jpeg;base64," + b31 + "" x="470" y="118" width="330" height="286" preserveAspectRatio="xMidYMid meet"/>
+<text x="480" y="430" font-family="Arial,sans-serif" font-size="15" fill="#666">RADIOGRAPHY · REAL-SPACE GAS / WATER REDISTRIBUTION</text>
+<path d="M820 220 H865" stroke="#d97a5d" stroke-width="3"/><path d="M855 210 l14 10 -14 10" fill="#d97a5d"/>
+<image href="data:image/jpeg;base64," + b29 + "" x="895" y="110" width="230" height="310" preserveAspectRatio="xMidYMid meet"/>
+<text x="878" y="450" font-family="Arial,sans-serif" font-size="15" fill="#666">DIFFRACTION · PHASE / STRUCTURE</text>
+<text x="28" y="494" font-family="Arial,sans-serif" font-size="15" fill="#2d7771">CO₂ conversion is visualized through coupled real-space imaging and reciprocal-space structure probes.</text>
+</svg>
