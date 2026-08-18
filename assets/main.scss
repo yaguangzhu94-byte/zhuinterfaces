@@ -48,6 +48,7 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 @import "layouts/team";
 @import "layouts/research";
 @import "layouts/research_media";
+@import "layouts/research_media_fix";
 
 // Utilities
 @import "utilities/dark-mode";
