@@ -1,0 +1,45 @@
+<script>
+(function () {
+  function installResearchHero() {
+    var hero = document.querySelector('.research-fancy-hero-art');
+    if (!hero) return;
+
+    var asset = '{{ "/images/research/research-fancy-crop.jpg" | relative_url }}';
+    var fallback = '{{ "/images/research/multiscale-fancy.svg" | relative_url }}';
+
+    fetch(asset, { cache: 'no-store' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('research hero asset unavailable');
+        return response.text();
+      })
+      .then(function (text) {
+        var compact = text.replace(/\s+/g, '');
+        var looksLikeBase64 = compact.length > 10000 && /^[A-Za-z0-9+/=]+$/.test(compact);
+        var img = document.createElement('img');
+        img.alt = 'Zhu Lab multiscale research framework from molecular interactions and confined interfaces to material structure, electrochemical devices, sustainable systems, and operando synchrotron X-ray characterization';
+        img.loading = 'eager';
+        img.decoding = 'async';
+        img.style.display = 'block';
+        img.style.width = '100%';
+        img.style.height = 'auto';
+        img.src = looksLikeBase64 ? 'data:image/jpeg;base64,' + compact : asset;
+        hero.replaceChildren(img);
+      })
+      .catch(function () {
+        var img = document.createElement('img');
+        img.src = fallback;
+        img.alt = 'Zhu Lab multiscale research framework';
+        img.style.display = 'block';
+        img.style.width = '100%';
+        img.style.height = 'auto';
+        hero.replaceChildren(img);
+      });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', installResearchHero);
+  } else {
+    installResearchHero();
+  }
+})();
+</script>
