@@ -47,6 +47,7 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 @import "layouts/home_overrides";
 @import "layouts/team";
 @import "layouts/research";
+@import "layouts/research_media";
 
 // Utilities
 @import "utilities/dark-mode";
