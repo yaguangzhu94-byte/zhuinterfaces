@@ -44,6 +44,7 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 // Layouts
 @import "layouts/grid";
 @import "layouts/home";
+@import "layouts/home_overrides";
 @import "layouts/team";
 @import "layouts/research";
 
