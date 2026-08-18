@@ -5,3 +5,22 @@ layout: default
 <div class="fade-in-section">
   {{ content }}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var heroImage = document.querySelector('.research-fancy-hero-art img');
+  if (!heroImage) return;
+
+  var originalArt = document.createElement('object');
+  originalArt.type = 'image/svg+xml';
+  originalArt.data = '{{ site.baseurl }}/images/research/multiscale-fancy-original.svg';
+  originalArt.setAttribute('aria-label', heroImage.getAttribute('alt') || 'Multiscale Zhu Lab research');
+  originalArt.style.display = 'block';
+  originalArt.style.width = '100%';
+  originalArt.style.height = 'auto';
+  originalArt.style.aspectRatio = '1150 / 530';
+  originalArt.style.border = '0';
+
+  heroImage.replaceWith(originalArt);
+});
+</script>
