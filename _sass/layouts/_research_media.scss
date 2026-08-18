@@ -1,0 +1,133 @@
+// Direction 1 refinements: larger section identity and real experimental media.
+
+.research-direction-one .direction-meta {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(.8rem, 1.8vw, 1.4rem);
+  margin-bottom: 1.1rem;
+}
+
+.research-direction-one .direction-meta span {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(3.3rem, 6vw, 5.6rem);
+  line-height: .82;
+  letter-spacing: -.045em;
+  font-weight: 600;
+  color: var(--r-teal);
+}
+
+.research-direction-one .direction-meta b {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.55rem);
+  line-height: 1.15;
+  letter-spacing: .08em;
+  font-weight: 700;
+  color: var(--r-ink);
+}
+
+.direction-one-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cell-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.direction-one-cell-image {
+  width: auto;
+  max-width: min(100%, 280px);
+  max-height: 390px;
+  margin: 0 auto;
+}
+
+.media-real {
+  margin: 0;
+  border: 0;
+  background: transparent;
+  min-height: 0;
+  padding: 0;
+  display: block;
+  text-align: left;
+}
+
+.media-operando-real {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-operando-real img {
+  max-height: 560px;
+  width: 100%;
+}
+
+.media-panel .media-real {
+  margin-top: 1.4rem;
+}
+
+.media-radiography-real .media-frame {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.media-radiography-real img {
+  width: auto;
+  max-width: 100%;
+  max-height: 560px;
+}
+
+.media-diffraction-real {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.media-diffraction-real img {
+  width: auto;
+  max-width: 100%;
+  max-height: 560px;
+}
+
+.media-status {
+  position: absolute;
+  left: .7rem;
+  bottom: .7rem;
+  padding: .38rem .58rem;
+  background: rgba(247,246,240,.92);
+  border: 1px solid rgba(32,35,33,.14);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .11em;
+  color: var(--r-teal);
+}
+
+@media (max-width: 700px) {
+  .research-direction-one .direction-meta {
+    align-items: flex-start;
+  }
+
+  .research-direction-one .direction-meta span {
+    font-size: 3rem;
+  }
+
+  .research-direction-one .direction-meta b {
+    font-size: .95rem;
+    padding-top: .25rem;
+  }
+
+  .direction-one-cell-image,
+  .media-operando-real img,
+  .media-radiography-real img,
+  .media-diffraction-real img {
+    max-height: none;
+  }
+}
