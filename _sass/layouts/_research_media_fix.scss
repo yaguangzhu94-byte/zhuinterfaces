@@ -1,0 +1,59 @@
+// Direction 1 media refinements
+.research-direction-one .direction-meta {
+  gap: 1rem;
+  align-items: center;
+}
+
+.research-direction-one .direction-meta span {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  line-height: .85;
+  font-weight: 600;
+  letter-spacing: -.04em;
+}
+
+.research-direction-one .direction-meta b {
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
+  letter-spacing: .09em;
+}
+
+.research-direction-one .media-real {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  min-height: 0;
+  display: block;
+}
+
+.research-direction-one .media-real img,
+.research-direction-one .direction-one-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+.research-direction-one .media-radiography-real,
+.research-direction-one .media-diffraction-real {
+  margin-top: 1.4rem;
+  background: #fff;
+  border: 1px solid var(--r-line);
+  padding: 1rem;
+}
+
+.research-direction-one .media-radiography-real img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.research-direction-one .media-diffraction-real img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.research-direction-one .media-status { display:none; }
