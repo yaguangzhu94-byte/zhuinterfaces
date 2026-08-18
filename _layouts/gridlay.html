@@ -5,3 +5,35 @@ layout: default
 <div class="fade-in-section">
   {{ content }}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var heroImage = document.querySelector('.research-fancy-hero-art img');
+  if (!heroImage) return;
+
+  // The original fancy artwork is stored inside the legacy SVG as an
+  // embedded JPEG.  The SVG wrapper itself is malformed, so browsers cannot
+  // render it directly.  Read it as plain text, extract the JPEG data URI,
+  // and use that JPEG as the image source.  This preserves the exact original
+  // artwork without asking the browser to parse the broken SVG markup.
+  var originalSvg = '{{ site.baseurl }}/images/research/multiscale-fancy-original.svg';
+
+  fetch(originalSvg)
+    .then(function (response) {
+      if (!response.ok) throw new Error('Could not load original research artwork');
+      return response.text();
+    })
+    .then(function (svgText) {
+      var match = svgText.match(/data:image\/jpeg;base64,([A-Za-z0-9+/=]+)/);
+      if (!match || !match[1]) throw new Error('Embedded research artwork not found');
+
+      heroImage.src = 'data:image/jpeg;base64,' + match[1];
+      heroImage.alt = 'Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization';
+      heroImage.classList.add('research-original-art-loaded');
+    })
+    .catch(function (error) {
+      console.warn('Using research artwork fallback:', error);
+      // The existing native SVG remains visible as a safe fallback.
+    });
+});
+</script>
