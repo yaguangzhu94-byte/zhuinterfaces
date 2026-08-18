@@ -9,6 +9,7 @@ layout: default
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var base = '{{ site.baseurl }}/images/research/';
+  var imageRoot = '{{ site.baseurl }}/images/';
 
   // Load the clean WebP copy of the multiscale research artwork.
   var heroImage = document.querySelector('.research-fancy-hero-art img');
@@ -59,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var radiographyPanel = document.querySelector('.research-direction-one .media-video');
   if (radiographyPanel) {
     radiographyPanel.classList.remove('media-placeholder');
-    radiographyPanel.classList.add('media-real', 'media-radiography-real');
-    radiographyPanel.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-radiography.webp?v=4" alt="Operando X-ray radiography image showing contrast changes across the working electrochemical cell">';
+    radiographyPanel.classList.add('media-real', 'media-radiography-real', 'media-radiography-video');
+    radiographyPanel.innerHTML = '<video class="direction-one-video" autoplay muted loop playsinline preload="metadata" poster="' + base + 'direction1-radiography.webp?v=4" aria-label="Time-resolved operando X-ray radiography showing gas accumulation and liquid redistribution"><source src="' + imageRoot + 'Media1_square_10s_web.mp4?v=1" type="video/mp4">Your browser does not support the video tag.</video>';
   }
 
   var diffractionPanel = document.querySelector('.research-direction-one .media-diffraction');
