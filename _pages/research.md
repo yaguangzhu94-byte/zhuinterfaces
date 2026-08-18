@@ -24,91 +24,62 @@ permalink: /research/
     </div>
 
     <div class="research-story-block reaction-story">
-      <div class="story-text">
-        <div class="story-kicker">REACTIONS</div>
-        <h3>One platform, different interfacial chemistries.</h3>
-        <p>We adapt a common electrochemical architecture to study transformations at opposing interfaces, including CO<sub>2</sub> electroreduction and ammonia oxidation. The emphasis is not a single device chemistry, but the dynamic interfacial processes shared across electrochemical systems.</p>
-        <div class="reaction-tags"><span>CO<sub>2</sub> electroreduction</span><span>Ammonia oxidation</span></div>
-      </div>
-      <figure class="story-figure cell-figure">
-        <div class="cell-sketch" aria-label="Electrochemical cell architecture">
-          <div class="cell-layer cell-layer-left"></div>
-          <div class="cell-layer cell-layer-porous"></div>
-          <div class="cell-layer cell-layer-catalyst"></div>
-          <div class="cell-layer cell-layer-membrane"></div>
-          <div class="cell-layer cell-layer-right"></div>
-          <div class="cell-bubbles"><i></i><i></i><i></i><i></i><i></i></div>
-        </div>
-        <figcaption>Electrochemical cell architecture. Reaction-specific electrode and electrolyte environments are varied while maintaining access to the working interface.</figcaption>
-      </figure>
+      <div class="story-text"><div class="story-kicker">REACTIONS</div><h3>One platform, different interfacial chemistries.</h3><p>We adapt a common electrochemical architecture to study transformations at opposing interfaces, including CO<sub>2</sub> electroreduction and ammonia oxidation. The emphasis is not a single device chemistry, but the dynamic interfacial processes shared across electrochemical systems.</p><div class="reaction-tags"><span>CO<sub>2</sub> electroreduction</span><span>Ammonia oxidation</span></div></div>
+      <figure class="story-figure cell-figure"><div class="cell-sketch" aria-label="Electrochemical cell architecture"><div class="cell-layer cell-layer-left"></div><div class="cell-layer cell-layer-porous"></div><div class="cell-layer cell-layer-catalyst"></div><div class="cell-layer cell-layer-membrane"></div><div class="cell-layer cell-layer-right"></div><div class="cell-bubbles"><i></i><i></i><i></i><i></i><i></i></div></div><figcaption>Electrochemical cell architecture. Reaction-specific electrode and electrolyte environments are varied while maintaining access to the working interface.</figcaption></figure>
     </div>
 
     <div class="research-story-block operando-story">
-      <div class="story-text">
-        <div class="story-kicker">OPERANDO PLATFORM</div>
-        <h3>Seeing inside a working electrochemical device.</h3>
-        <p>Our synchrotron-compatible cells are designed so that diffraction and transmission imaging can probe the same operating device. This provides complementary views of interfacial structure, phase evolution, and transport while current is flowing.</p>
-      </div>
-      <figure class="story-figure media-placeholder media-operando">
-        <div class="media-placeholder-label">OPERANDO CELL · DIFFRACTION · RADIOGRAPHY</div>
-        <p>Reserved for your uploaded operando platform figure.</p>
-      </figure>
+      <div class="story-text"><div class="story-kicker">OPERANDO PLATFORM</div><h3>Seeing inside a working electrochemical device.</h3><p>Our synchrotron-compatible cells are designed so that diffraction and transmission imaging can probe the same operating device. This provides complementary views of interfacial structure, phase evolution, and transport while current is flowing.</p></div>
+      <figure class="story-figure media-placeholder media-operando"><div class="media-placeholder-label">OPERANDO CELL · DIFFRACTION · RADIOGRAPHY</div><p>Reserved for your uploaded operando platform figure.</p></figure>
     </div>
 
     <div class="research-media-pair">
-      <div class="media-panel">
-        <div class="story-kicker">DYNAMIC RADIOGRAPHY</div>
-        <h3>Gas accumulation and liquid redistribution.</h3>
-        <p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The contrast evolution provides a direct view of how the internal multiphase environment changes during operation.</p>
-        <div class="media-placeholder media-video"><span>RADIOGRAPHY</span><p>Operando radiography image</p></div>
-      </div>
-      <div class="media-panel">
-        <div class="story-kicker">OPERANDO DIFFRACTION</div>
-        <h3>Phase evolution under operating current.</h3>
-        <p>Two-dimensional diffraction patterns reveal changes in crystalline phases during operation, including the appearance of salt diffraction features at elevated current density.</p>
-        <div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Operando diffraction patterns</p></div>
-      </div>
+      <div class="media-panel"><div class="story-kicker">DYNAMIC RADIOGRAPHY</div><h3>Gas accumulation and liquid redistribution.</h3><p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The contrast evolution provides a direct view of how the internal multiphase environment changes during operation.</p><div class="media-placeholder media-video"><span>RADIOGRAPHY</span><p>Operando radiography image</p></div></div>
+      <div class="media-panel"><div class="story-kicker">OPERANDO DIFFRACTION</div><h3>Phase evolution under operating current.</h3><p>Two-dimensional diffraction patterns reveal changes in crystalline phases during operation, including the appearance of salt diffraction features at elevated current density.</p><div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Operando diffraction patterns</p></div></div>
     </div>
   </section>
 
-  <section class="research-direction" id="transport">
-    <div class="direction-copy">
+  <section class="research-direction research-direction-two" id="transport">
+    <div class="direction-copy direction-two-copy">
       <div class="direction-meta"><span>02</span><b>2D MATERIALS FOR CONFINED TRANSPORT</b></div>
-      <h2>Engineering 2D materials to control transport under confinement.</h2>
-      <p>We synthesize and assemble laminar 2D materials with tunable chemistry and interlayer environments, then connect molecular confinement to mesoscale structure and selective ion transport.</p>
-      <div class="process-words"><span>SYNTHESIZE</span><i>→</i><span>CHARACTERIZE</span><i>→</i><span>UNDERSTAND TRANSPORT</span></div>
+      <p>Two-dimensional membranes create angstrom- to nanometer-scale channels in which water, ions, and surface chemistry interact strongly. We design and assemble layered materials such as MXenes and tune their interlayer environment through composition and intercalation. The central goal is to understand how local water organization, ion hydration, and confinement determine which species enter, move through, and leave these channels.</p>
+      <p>Transport cannot be understood from nanochannel size alone. Defects, swelling, tortuosity, sheet alignment, and mesoscale morphology create additional pathways that can dominate membrane performance. We therefore connect molecular interactions to membrane structure across length scales using diffraction and scattering for interlayer structure and orientational order, together with three-dimensional FIB-SEM and X-ray nanotomography for pores, defects, and transport heterogeneity. This multiscale picture guides the design of selective membranes for water treatment, separations, and sustainable ion-management technologies.</p>
     </div>
 
-    <div class="direction-visual transport-visual">
-      <div class="transport-stage">
-        <div class="visual-label">SYNTHESIZE</div>
-        <svg viewBox="0 0 300 270" role="img" aria-label="Layered 2D materials with ions and confined water">
-          <g stroke="#2d7771" stroke-width="5" fill="#b7d6d0"><path d="M25 54 C90 35 205 65 275 45 L270 73 C200 89 90 62 29 80 Z"/><path d="M25 117 C90 98 205 128 275 108 L270 136 C200 152 90 125 29 143 Z"/><path d="M25 180 C90 161 205 191 275 171 L270 199 C200 215 90 188 29 206 Z"/></g>
-          <g fill="#7775a8"><circle cx="92" cy="99" r="10"/><circle cx="171" cy="92" r="10"/><circle cx="214" cy="157" r="10"/></g><g fill="#d97a5d"><circle cx="135" cy="91" r="8"/><circle cx="122" cy="159" r="8"/><circle cx="240" cy="93" r="8"/></g><g fill="#a9c9c3"><circle cx="69" cy="99" r="6"/><circle cx="110" cy="101" r="6"/><circle cx="151" cy="159" r="6"/><circle cx="230" cy="158" r="6"/></g>
-        </svg>
-        <p>2D building blocks<br>Intercalation · Surface chemistry</p>
+    <div class="research-story-block direction-two-design-story">
+      <div class="story-text">
+        <div class="story-kicker">MATERIALS DESIGN</div>
+        <h3>Building confined channels with tunable chemistry.</h3>
+        <p>Our membrane design begins with 2D building blocks and molecular or ionic intercalants that regulate water content, interlayer spacing, and surface interactions. We then translate these nanoscale controls into scalable membrane architectures while preserving selective transport pathways.</p>
       </div>
+      <figure class="story-figure direction-two-figure direction-two-design-figure">
+        <img src="../images/research/direction2-design.webp" alt="Design and fabrication of two-dimensional membranes for selective ion transport">
+        <figcaption>2D building blocks, intercalant design, structure modulation, and membrane fabrication for selective ion transport.</figcaption>
+      </figure>
+    </div>
 
-      <div class="transport-stage characterization-stage">
-        <div class="visual-label visual-label-purple">CHARACTERIZE</div>
-        <div class="characterization-grid">
-          <div class="tomo-cube"><div class="pore p1"></div><div class="pore p2"></div><div class="pore p3"></div><div class="pore p4"></div><div class="pore p5"></div></div>
-          <div class="scatter-pattern saxs"><span></span></div>
-          <div class="scatter-pattern waxs"><span></span></div>
-        </div>
-        <div class="characterization-labels"><span>3D MORPHOLOGY</span><span>SAXS (2D)</span><span>WAXS (2D)</span></div>
-        <p>Tomography · Scattering · Diffraction · Spectroscopy</p>
+    <div class="research-story-block direction-two-multiscale-story">
+      <div class="story-text">
+        <div class="story-kicker">CONFINEMENT ACROSS SCALES</div>
+        <h3>From molecular interactions to membrane-scale transport.</h3>
+        <p>Confinement begins with molecular-scale solvation and ion–surface interactions, but the resulting transport response emerges across nanochannels, mesoscale morphology, and the full membrane. We use this hierarchy to identify where selectivity is created—and where defects or structural heterogeneity bypass it.</p>
       </div>
+      <figure class="story-figure direction-two-figure direction-two-multiscale-figure">
+        <img src="../images/research/direction2-multiscale.webp" alt="Multiscale membrane structure from molecular interactions to mesoscale and macroscale properties">
+        <figcaption>Connecting molecular interactions, confined transport, mesoscale membrane structure, and macroscopic properties.</figcaption>
+      </figure>
+    </div>
 
-      <div class="transport-stage transport-mechanism">
-        <div class="visual-label visual-label-green">UNDERSTAND TRANSPORT</div>
-        <svg viewBox="0 0 330 270" role="img" aria-label="Selective ion transport through confined 2D channels">
-          <path d="M20 55 C95 40 232 69 310 52" fill="none" stroke="#2d7771" stroke-width="6"/><path d="M20 116 C95 101 232 130 310 113" fill="none" stroke="#2d7771" stroke-width="6"/><path d="M20 177 C95 162 232 191 310 174" fill="none" stroke="#2d7771" stroke-width="6"/><path d="M20 238 C95 223 232 252 310 235" fill="none" stroke="#2d7771" stroke-width="6"/>
-          <g fill="#7775a8"><circle cx="75" cy="89" r="10"/><circle cx="167" cy="150" r="10"/><circle cx="263" cy="210" r="10"/></g><g fill="#d97a5d"><circle cx="122" cy="90" r="7"/><circle cx="215" cy="149" r="7"/><circle cx="285" cy="88" r="7"/></g><g fill="#a9c9c3"><circle cx="54" cy="91" r="5"/><circle cx="94" cy="91" r="5"/><circle cx="149" cy="150" r="5"/><circle cx="185" cy="150" r="5"/></g>
-          <path d="M56 207 C105 175 135 181 164 149 C199 110 235 117 278 78" fill="none" stroke="#d97a5d" stroke-width="3" stroke-dasharray="8 7"/>
-        </svg>
-        <p>Hydration · Confinement · Selectivity</p>
+    <div class="research-story-block direction-two-characterization-story">
+      <div class="story-text">
+        <div class="story-kicker">MULTISCALE CHARACTERIZATION</div>
+        <h3>Resolving structure that controls transport.</h3>
+        <p>Scattering, diffraction, microscopy, and three-dimensional imaging provide complementary windows into membrane organization. SAXS/WAXS resolve nanoscale spacing and orientational order, while FIB-SEM and X-ray tomography reveal subsurface pores, defects, swelling, and heterogeneous ion-transport pathways at the micron scale.</p>
       </div>
+      <figure class="story-figure direction-two-figure direction-two-characterization-figure">
+        <img src="../images/research/direction2-characterization.webp" alt="Multiscale characterization of membrane surface structure, subsurface morphology, orientational order, water distribution, and ion flux">
+        <figcaption>Linking surface and subsurface structure, orientational order, water distribution, and ion flux across complementary characterization length scales.</figcaption>
+      </figure>
     </div>
   </section>
 </div>
