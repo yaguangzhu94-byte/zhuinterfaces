@@ -40,11 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   }
 
-  // Direction 1: use the real experimental media supplied by the lab.
   var cellSketch = document.querySelector('.research-direction-one .cell-sketch');
   if (cellSketch) {
     var cellImg = document.createElement('img');
-    cellImg.src = base + 'direction1-cell.webp';
+    cellImg.src = base + 'direction1-cell.webp?v=2';
     cellImg.alt = 'Cross-sectional electrochemical cell architecture used to study working interfaces';
     cellImg.className = 'direction-one-image direction-one-cell-image';
     cellSketch.replaceWith(cellImg);
@@ -54,26 +53,21 @@ document.addEventListener('DOMContentLoaded', function () {
   if (operandoFigure) {
     operandoFigure.classList.remove('media-placeholder');
     operandoFigure.classList.add('media-real', 'media-operando-real');
-    operandoFigure.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-operando.webp" alt="Operando electrochemical cell with simultaneous diffraction and radiography measurements">';
+    operandoFigure.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-operando.webp?v=2" alt="Operando electrochemical cell with simultaneous diffraction and radiography measurements">';
   }
 
   var radiographyPanel = document.querySelector('.research-direction-one .media-video');
   if (radiographyPanel) {
     radiographyPanel.classList.remove('media-placeholder');
     radiographyPanel.classList.add('media-real', 'media-radiography-real');
-    radiographyPanel.innerHTML = '<div class="media-frame"><img class="direction-one-image" src="' + base + 'direction1-radiography.webp" alt="Operando X-ray radiography image showing contrast changes across the working electrochemical cell"><span class="media-status">RADIOGRAPHY STILL</span></div>';
-    var radiographyCopy = radiographyPanel.closest('.media-panel');
-    if (radiographyCopy) {
-      var radiographyText = radiographyCopy.querySelector('p');
-      if (radiographyText) radiographyText.textContent = 'Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The image below is a still from the operando radiography sequence.';
-    }
+    radiographyPanel.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-radiography.webp?v=4" alt="Operando X-ray radiography image showing contrast changes across the working electrochemical cell">';
   }
 
   var diffractionPanel = document.querySelector('.research-direction-one .media-diffraction');
   if (diffractionPanel) {
     diffractionPanel.classList.remove('media-placeholder');
     diffractionPanel.classList.add('media-real', 'media-diffraction-real');
-    diffractionPanel.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-diffraction.webp" alt="Operando two-dimensional diffraction patterns collected at different current densities">';
+    diffractionPanel.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-diffraction.webp?v=4" alt="Operando two-dimensional diffraction patterns collected at different current densities">';
   }
 });
 </script>
