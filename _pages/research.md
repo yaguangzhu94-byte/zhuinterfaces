@@ -32,7 +32,14 @@ permalink: /research/
         <div class="reaction-tags"><span>CO<sub>2</sub> electroreduction</span><span>Ammonia oxidation</span></div>
       </div>
       <figure class="story-figure cell-figure">
-        <img src="../images/research/electrochemical-cell.webp" alt="Cross-sectional electrochemical cell architecture used to study working interfaces">
+        <div class="cell-sketch" aria-label="Electrochemical cell architecture">
+          <div class="cell-layer cell-layer-left"></div>
+          <div class="cell-layer cell-layer-porous"></div>
+          <div class="cell-layer cell-layer-catalyst"></div>
+          <div class="cell-layer cell-layer-membrane"></div>
+          <div class="cell-layer cell-layer-right"></div>
+          <div class="cell-bubbles"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
         <figcaption>Electrochemical cell architecture. Reaction-specific electrode and electrolyte environments are varied while maintaining access to the working interface.</figcaption>
       </figure>
     </div>
@@ -45,7 +52,7 @@ permalink: /research/
       </div>
       <figure class="story-figure media-placeholder media-operando">
         <div class="media-placeholder-label">OPERANDO CELL · DIFFRACTION · RADIOGRAPHY</div>
-        <p>Figure space reserved for the uploaded operando cell rendering.</p>
+        <p>Reserved for your uploaded operando platform figure.</p>
       </figure>
     </div>
 
@@ -53,14 +60,14 @@ permalink: /research/
       <div class="media-panel">
         <div class="story-kicker">DYNAMIC RADIOGRAPHY</div>
         <h3>Gas accumulation and liquid redistribution.</h3>
-        <p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The final page will host the radiography video here; the still image serves as its poster frame.</p>
+        <p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The radiography movie will sit here, with the uploaded still used as its poster frame.</p>
         <div class="media-placeholder media-video"><span>VIDEO</span><p>Radiography movie placeholder</p></div>
       </div>
       <div class="media-panel">
         <div class="story-kicker">OPERANDO DIFFRACTION</div>
         <h3>Phase evolution under operating current.</h3>
         <p>Two-dimensional diffraction patterns reveal changes in crystalline phases during operation, including the appearance of salt diffraction features at elevated current density.</p>
-        <div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Diffraction figure placeholder</p></div>
+        <div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Uploaded diffraction figure will occupy this panel.</p></div>
       </div>
     </div>
   </section>
