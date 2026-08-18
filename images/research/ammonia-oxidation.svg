@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#f8f7f2"/>
+<text x="34" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#d66546" letter-spacing="2">AMMONIA OXIDATION</text>
+<text x="34" y="84" font-family="Georgia,serif" font-size="31" fill="#202321">Tracking catalyst-surface evolution and reaction selectivity</text>
+<g transform="translate(42 120)">
+  <g fill="#9aa5aa" stroke="#5d6669" stroke-width="1"><circle cx="38" cy="166" r="23"/><circle cx="86" cy="166" r="23"/><circle cx="134" cy="166" r="23"/><circle cx="182" cy="166" r="23"/><circle cx="230" cy="166" r="23"/><circle cx="62" cy="126" r="23"/><circle cx="110" cy="126" r="23"/><circle cx="158" cy="126" r="23"/><circle cx="206" cy="126" r="23"/></g>
+  <circle cx="126" cy="56" r="12" fill="#7775a8"/><circle cx="101" cy="38" r="7" fill="#eee"/><circle cx="151" cy="38" r="7" fill="#eee"/><circle cx="126" cy="24" r="7" fill="#eee"/><path d="M126 68 C126 87 126 101 132 111" stroke="#d97a5d" stroke-width="3" fill="none"/>
+  <text x="73" y="224" font-family="Arial,sans-serif" font-size="14" fill="#626862">NH₃ adsorption</text>
+</g>
+<path d="M320 250 H388" stroke="#2d7771" stroke-width="3"/><path d="M377 240 l15 10 -15 10" fill="#2d7771"/>
+<g transform="translate(410 120)">
+  <g fill="#9aa5aa" stroke="#5d6669" stroke-width="1"><circle cx="38" cy="166" r="23"/><circle cx="86" cy="166" r="23"/><circle cx="134" cy="166" r="23"/><circle cx="182" cy="166" r="23"/><circle cx="230" cy="166" r="23"/><circle cx="62" cy="126" r="23"/><circle cx="110" cy="126" r="23"/><circle cx="158" cy="126" r="23"/><circle cx="206" cy="126" r="23"/></g>
+  <circle cx="105" cy="94" r="12" fill="#7775a8"/><circle cx="160" cy="86" r="11" fill="#d97a5d"/><path d="M105 107 L105 120 M160 98 L160 120" stroke="#202321" stroke-width="3"/>
+  <text x="55" y="224" font-family="Arial,sans-serif" font-size="14" fill="#626862">surface intermediates</text>
+</g>
+<path d="M690 250 H758" stroke="#2d7771" stroke-width="3"/><path d="M747 240 l15 10 -15 10" fill="#2d7771"/>
+<g transform="translate(790 118)">
+  <rect x="0" y="0" width="350" height="248" rx="9" fill="#fff" stroke="#d8d5cf"/>
+  <text x="24" y="30" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#626862">OPERANDO APXPS / XAS</text>
+  <path d="M26 188 C57 184 69 166 83 112 C94 70 103 77 113 137 C122 187 145 176 163 129 C178 92 194 102 208 154 C220 196 247 183 275 172 C296 164 314 165 329 164" fill="none" stroke="#2d7771" stroke-width="4"/>
+  <path d="M26 199 C58 194 77 184 88 150 C100 114 112 119 121 158 C132 198 153 188 171 158 C187 132 201 136 214 170 C226 201 249 193 277 183 C297 176 315 177 329 176" fill="none" stroke="#d97a5d" stroke-width="3"/>
+  <line x1="26" y1="210" x2="330" y2="210" stroke="#aaa"/>
+  <text x="24" y="237" font-family="Arial,sans-serif" font-size="13" fill="#626862">surface chemistry · oxidation state · restructuring</text>
+</g>
+<text x="34" y="492" font-family="Arial,sans-serif" font-size="15" fill="#d66546">The visual emphasizes changing interfacial states and spectroscopy rather than a fixed single reaction pathway.</text>
+</svg>
