@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', function () {
     radiographyPanel.classList.remove('media-placeholder');
     radiographyPanel.classList.add('media-real', 'media-radiography-real');
     radiographyPanel.innerHTML = '<div class="media-frame"><img class="direction-one-image" src="' + base + 'direction1-radiography.webp" alt="Operando X-ray radiography image showing contrast changes across the working electrochemical cell"><span class="media-status">RADIOGRAPHY STILL</span></div>';
+    var radiographyCopy = radiographyPanel.closest('.media-panel');
+    if (radiographyCopy) {
+      var radiographyText = radiographyCopy.querySelector('p');
+      if (radiographyText) radiographyText.textContent = 'Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The image below is a still from the operando radiography sequence.';
+    }
   }
 
   var diffractionPanel = document.querySelector('.research-direction-one .media-diffraction');
