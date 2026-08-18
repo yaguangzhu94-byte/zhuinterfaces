@@ -13,7 +13,7 @@ permalink: /research/
   </header>
 
   <div class="research-fancy-hero-art">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/research/multiscale-fancy.svg" alt="Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization">
+    <img src="../images/research/multiscale-fancy.svg" alt="Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization">
   </div>
 
   <section class="research-direction" id="interfaces">
