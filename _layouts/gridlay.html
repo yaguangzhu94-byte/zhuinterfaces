@@ -11,29 +11,38 @@ document.addEventListener('DOMContentLoaded', function () {
   var heroImage = document.querySelector('.research-fancy-hero-art img');
   if (!heroImage) return;
 
-  // The original fancy artwork is stored inside the legacy SVG as an
-  // embedded JPEG.  The SVG wrapper itself is malformed, so browsers cannot
-  // render it directly.  Read it as plain text, extract the JPEG data URI,
-  // and use that JPEG as the image source.  This preserves the exact original
-  // artwork without asking the browser to parse the broken SVG markup.
-  var originalSvg = '{{ site.baseurl }}/images/research/multiscale-fancy-original.svg';
+  // Load a clean WebP copy of the exact fancy research artwork. The data is
+  // split across small text assets because the repository connector cannot
+  // upload binary image bytes directly. This avoids the malformed legacy SVG
+  // and its corrupted embedded JPEG while preserving the original artwork.
+  var base = '{{ site.baseurl }}/images/research/';
+  var dataFiles = [
+    'fancy-data-00.txt',
+    'fancy-data-01.txt',
+    'fancy-data-02.txt',
+    'fancy-data-03.txt',
+    'fancy-data-04-06.txt',
+    'fancy-data-07-09.txt',
+    'fancy-data-10-12.txt'
+  ];
 
-  fetch(originalSvg)
-    .then(function (response) {
-      if (!response.ok) throw new Error('Could not load original research artwork');
+  Promise.all(dataFiles.map(function (name) {
+    return fetch(base + name).then(function (response) {
+      if (!response.ok) throw new Error('Could not load ' + name);
       return response.text();
-    })
-    .then(function (svgText) {
-      var match = svgText.match(/data:image\/jpeg;base64,([A-Za-z0-9+/=]+)/);
-      if (!match || !match[1]) throw new Error('Embedded research artwork not found');
-
-      heroImage.src = 'data:image/jpeg;base64,' + match[1];
+    });
+  }))
+    .then(function (parts) {
+      var encoded = parts.join('').replace(/\s+/g, '');
+      heroImage.src = 'data:image/webp;base64,' + encoded;
       heroImage.alt = 'Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization';
       heroImage.classList.add('research-original-art-loaded');
+      heroImage.style.display = 'block';
+      heroImage.style.width = '100%';
+      heroImage.style.height = 'auto';
     })
     .catch(function (error) {
       console.warn('Using research artwork fallback:', error);
-      // The existing native SVG remains visible as a safe fallback.
     });
 });
 </script>
