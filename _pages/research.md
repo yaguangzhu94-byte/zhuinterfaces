@@ -60,14 +60,14 @@ permalink: /research/
       <div class="media-panel">
         <div class="story-kicker">DYNAMIC RADIOGRAPHY</div>
         <h3>Gas accumulation and liquid redistribution.</h3>
-        <p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The radiography movie will sit here, with the uploaded still used as its poster frame.</p>
-        <div class="media-placeholder media-video"><span>VIDEO</span><p>Radiography movie placeholder</p></div>
+        <p>Time-resolved radiography tracks changes in X-ray transmission as gas accumulates and liquid is displaced inside porous components and flow channels. The contrast evolution provides a direct view of how the internal multiphase environment changes during operation.</p>
+        <div class="media-placeholder media-video"><span>RADIOGRAPHY</span><p>Operando radiography image</p></div>
       </div>
       <div class="media-panel">
         <div class="story-kicker">OPERANDO DIFFRACTION</div>
         <h3>Phase evolution under operating current.</h3>
         <p>Two-dimensional diffraction patterns reveal changes in crystalline phases during operation, including the appearance of salt diffraction features at elevated current density.</p>
-        <div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Uploaded diffraction figure will occupy this panel.</p></div>
+        <div class="media-placeholder media-diffraction"><span>2D XRD</span><p>Operando diffraction patterns</p></div>
       </div>
     </div>
   </section>
