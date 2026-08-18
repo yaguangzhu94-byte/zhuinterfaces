@@ -69,17 +69,42 @@ permalink: /
       </div>
     </div>
 
-    <div class="zhu-xray-thread" aria-label="Synchrotron X-ray methods across scales">
-      <div class="xray-label">SYNCHROTRON X-RAYS</div>
-      <svg viewBox="0 0 1180 120" role="img">
-        <ellipse class="storage-ring" cx="88" cy="60" rx="54" ry="28"/><circle class="source-dot" cx="136" cy="48" r="5"/>
-        <path class="beam-thread" d="M140 48 C250 42 340 76 450 58 C560 40 670 72 790 57 C900 42 1000 58 1140 58"/>
-        <path class="signal s1" d="M310 58 l18 -28 l18 45 l18 -22 l18 10"/>
-        <circle class="detector-mini" cx="570" cy="58" r="22"/><circle class="detector-mini-inner" cx="570" cy="58" r="12"/>
-        <rect class="tomo-mini" x="756" y="39" width="42" height="38" rx="5"/><rect class="radio-mini" x="924" y="35" width="18" height="46" rx="4"/>
-        <circle class="diff-mini" cx="1080" cy="58" r="22"/><circle class="diff-mini-inner" cx="1080" cy="58" r="11"/>
-      </svg>
-      <div class="xray-methods"><span>XAS</span><span>SAXS/WAXS</span><span>TOMOGRAPHY</span><span>RADIOGRAPHY</span><span>DIFFRACTION</span></div>
+    <div class="zhu-xray-thread xray-redesign" aria-label="Synchrotron X-ray methods across scales">
+      <div class="xray-label">OPERANDO SYNCHROTRON X-RAYS</div>
+      <style>
+        .xray-redesign .xray-tech-strip{position:relative;display:grid;grid-template-columns:.82fr repeat(5,1fr);gap:1rem;align-items:start;margin-top:.85rem;padding:.3rem 0 .4rem}.xray-redesign .xray-tech-strip:before{content:"";position:absolute;left:6%;right:4%;top:39px;border-top:1.5px solid rgba(119,117,168,.48);z-index:0}.xray-redesign .xray-tech{position:relative;z-index:1;text-align:center;min-width:0}.xray-redesign .xray-tech svg{width:100%;height:78px;margin:0;overflow:visible}.xray-redesign .xray-tech-name{font-family:'DM Sans',sans-serif;font-size:.63rem;line-height:1.25;letter-spacing:.07em;color:var(--zhu-muted);text-transform:uppercase;margin-top:.15rem}.xray-redesign .xray-tech-name b{display:block;color:var(--zhu-ink);font-size:.68rem;letter-spacing:.08em;margin-bottom:.12rem}.xray-redesign .source-name b{color:var(--zhu-teal)}.xray-redesign .beam{stroke:var(--zhu-lilac);stroke-width:1.8;fill:none}.xray-redesign .accent{stroke:var(--zhu-coral);stroke-width:1.8;fill:none}.xray-redesign .teal{stroke:var(--zhu-teal);stroke-width:2;fill:none}.xray-redesign .ink{stroke:var(--zhu-ink);stroke-width:1.7;fill:none}.xray-redesign .soft-teal{fill:rgba(45,119,113,.12);stroke:var(--zhu-teal);stroke-width:1.6}.xray-redesign .soft-lilac{fill:rgba(119,117,168,.10);stroke:var(--zhu-lilac);stroke-width:1.6}@media(max-width:760px){.xray-redesign .xray-tech-strip{grid-template-columns:repeat(2,1fr);gap:1.4rem .8rem}.xray-redesign .xray-tech-strip:before{display:none}.xray-redesign .xray-tech svg{height:72px}}
+      </style>
+      <div class="xray-tech-strip">
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><ellipse class="teal" cx="57" cy="38" rx="39" ry="21" stroke-width="4"/><circle cx="91" cy="29" r="4" fill="var(--zhu-lilac)"/><path class="beam" d="M94 29 H129"/></svg>
+          <div class="xray-tech-name source-name"><b>SOURCE</b>synchrotron beam</div>
+        </div>
+
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><path class="ink" d="M20 62 H112 M27 66 V14" opacity=".45"/><path class="accent" d="M29 58 C43 57 50 56 56 53 C62 49 65 38 68 25 C70 17 72 16 74 29 C78 50 84 47 88 39 C92 32 98 34 104 31"/><path class="beam" d="M0 39 H26"/></svg>
+          <div class="xray-tech-name"><b>XAS / XANES</b>X-ray absorption spectroscopy</div>
+        </div>
+
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><path class="beam" d="M0 39 H41"/><rect class="soft-lilac" x="46" y="10" width="58" height="58" rx="5"/><circle cx="75" cy="39" r="4" fill="var(--zhu-ink)"/><circle class="accent" cx="75" cy="39" r="14"/><circle class="teal" cx="75" cy="39" r="23" stroke-width="1.5"/><path class="ink" d="M72 35 L78 43 M78 35 L72 43"/></svg>
+          <div class="xray-tech-name"><b>SAXS / WAXS</b>small- & wide-angle scattering</div>
+        </div>
+
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><path class="beam" d="M0 39 H38"/><path class="teal" d="M45 22 C58 13 78 14 91 24 C100 31 101 45 93 54 C82 65 58 64 46 53 C37 45 37 31 45 22Z"/><path class="accent" d="M42 15 C25 25 25 51 42 61"/><path d="M37 11 l8 3 -6 6Z" fill="var(--zhu-coral)"/><g transform="translate(100 18)"><rect class="soft-teal" x="0" y="0" width="24" height="40" rx="3"/><path class="teal" d="M5 10 L19 6 M5 20 L19 16 M5 30 L19 26" stroke-width="1"/></g></svg>
+          <div class="xray-tech-name"><b>XCT</b>X-ray computed tomography</div>
+        </div>
+
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><circle cx="15" cy="39" r="5" fill="var(--zhu-coral)"/><path class="beam" d="M20 39 L47 24 M20 39 L47 54"/><rect x="50" y="24" width="9" height="30" rx="3" fill="var(--zhu-ink)" opacity=".65"/><path class="beam" d="M59 24 L103 14 M59 54 L103 64"/><rect class="soft-lilac" x="103" y="9" width="18" height="60" rx="3"/><ellipse cx="112" cy="39" rx="5" ry="12" fill="rgba(32,35,33,.22)"/></svg>
+          <div class="xray-tech-name"><b>RADIOGRAPHY</b>2D transmission imaging</div>
+        </div>
+
+        <div class="xray-tech">
+          <svg viewBox="0 0 130 78" aria-hidden="true"><path class="beam" d="M0 52 H42"/><g class="ink" opacity=".7"><path d="M45 22 L72 31 M45 31 L72 40 M45 40 L72 49 M45 49 L72 58"/></g><path class="accent" d="M45 52 L87 20"/><path class="teal" d="M45 52 L91 65"/><g transform="translate(95 12)" class="beam"><path d="M0 50 L7 40 L14 45 L22 21 L30 30"/></g></svg>
+          <div class="xray-tech-name"><b>XRD</b>X-ray diffraction</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
