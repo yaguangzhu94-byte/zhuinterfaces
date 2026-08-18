@@ -8,41 +8,67 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var heroImage = document.querySelector('.research-fancy-hero-art img');
-  if (!heroImage) return;
-
-  // Load a clean WebP copy of the exact fancy research artwork. The data is
-  // split across small text assets because the repository connector cannot
-  // upload binary image bytes directly. This avoids the malformed legacy SVG
-  // and its corrupted embedded JPEG while preserving the original artwork.
   var base = '{{ site.baseurl }}/images/research/';
-  var dataFiles = [
-    'fancy-data-00.txt',
-    'fancy-data-01.txt',
-    'fancy-data-02.txt',
-    'fancy-data-03.txt',
-    'fancy-data-04-06.txt',
-    'fancy-data-07-09.txt',
-    'fancy-data-10-12.txt'
-  ];
 
-  Promise.all(dataFiles.map(function (name) {
-    return fetch(base + name).then(function (response) {
-      if (!response.ok) throw new Error('Could not load ' + name);
-      return response.text();
-    });
-  }))
-    .then(function (parts) {
-      var encoded = parts.join('').replace(/\s+/g, '');
-      heroImage.src = 'data:image/webp;base64,' + encoded;
-      heroImage.alt = 'Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization';
-      heroImage.classList.add('research-original-art-loaded');
-      heroImage.style.display = 'block';
-      heroImage.style.width = '100%';
-      heroImage.style.height = 'auto';
-    })
-    .catch(function (error) {
-      console.warn('Using research artwork fallback:', error);
-    });
+  // Load the clean WebP copy of the multiscale research artwork.
+  var heroImage = document.querySelector('.research-fancy-hero-art img');
+  if (heroImage) {
+    var dataFiles = [
+      'fancy-data-00.txt',
+      'fancy-data-01.txt',
+      'fancy-data-02.txt',
+      'fancy-data-03.txt',
+      'fancy-data-04-06.txt',
+      'fancy-data-07-09.txt',
+      'fancy-data-10-12.txt'
+    ];
+
+    Promise.all(dataFiles.map(function (name) {
+      return fetch(base + name).then(function (response) {
+        if (!response.ok) throw new Error('Could not load ' + name);
+        return response.text();
+      });
+    }))
+      .then(function (parts) {
+        var encoded = parts.join('').replace(/\s+/g, '');
+        heroImage.src = 'data:image/webp;base64,' + encoded;
+        heroImage.alt = 'Multiscale Zhu Lab research from molecular interactions and confined interfaces to material structure, devices, sustainable systems, and operando synchrotron X-ray characterization';
+        heroImage.classList.add('research-original-art-loaded');
+      })
+      .catch(function (error) {
+        console.warn('Using research artwork fallback:', error);
+      });
+  }
+
+  // Direction 1: use the real experimental media supplied by the lab.
+  var cellSketch = document.querySelector('.research-direction-one .cell-sketch');
+  if (cellSketch) {
+    var cellImg = document.createElement('img');
+    cellImg.src = base + 'direction1-cell.webp';
+    cellImg.alt = 'Cross-sectional electrochemical cell architecture used to study working interfaces';
+    cellImg.className = 'direction-one-image direction-one-cell-image';
+    cellSketch.replaceWith(cellImg);
+  }
+
+  var operandoFigure = document.querySelector('.research-direction-one .media-operando');
+  if (operandoFigure) {
+    operandoFigure.classList.remove('media-placeholder');
+    operandoFigure.classList.add('media-real', 'media-operando-real');
+    operandoFigure.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-operando.webp" alt="Operando electrochemical cell with simultaneous diffraction and radiography measurements">';
+  }
+
+  var radiographyPanel = document.querySelector('.research-direction-one .media-video');
+  if (radiographyPanel) {
+    radiographyPanel.classList.remove('media-placeholder');
+    radiographyPanel.classList.add('media-real', 'media-radiography-real');
+    radiographyPanel.innerHTML = '<div class="media-frame"><img class="direction-one-image" src="' + base + 'direction1-radiography.webp" alt="Operando X-ray radiography image showing contrast changes across the working electrochemical cell"><span class="media-status">RADIOGRAPHY STILL</span></div>';
+  }
+
+  var diffractionPanel = document.querySelector('.research-direction-one .media-diffraction');
+  if (diffractionPanel) {
+    diffractionPanel.classList.remove('media-placeholder');
+    diffractionPanel.classList.add('media-real', 'media-diffraction-real');
+    diffractionPanel.innerHTML = '<img class="direction-one-image" src="' + base + 'direction1-diffraction.webp" alt="Operando two-dimensional diffraction patterns collected at different current densities">';
+  }
 });
 </script>
