@@ -46,11 +46,23 @@ permalink: /research/
       <p>Transport cannot be understood from nanochannel size alone. Defects, swelling, tortuosity, sheet alignment, and mesoscale morphology create additional pathways that can dominate membrane performance. We therefore connect molecular interactions to membrane structure across length scales using diffraction and scattering for interlayer structure and orientational order, together with three-dimensional FIB-SEM and X-ray nanotomography for pores, defects, and transport heterogeneity. This multiscale picture guides the design of selective membranes for water treatment, separations, and sustainable ion-management technologies.</p>
     </div>
 
-    <div class="research-story-block direction-two-design-story">
+    <div class="research-story-block direction-two-nanochannel-story">
       <div class="story-text">
-        <div class="story-kicker">CONFINED STRUCTURE</div>
-        <h3>Visualizing transport through layered MXene channels.</h3>
-        <p>Layered MXene membranes create nanoscale pathways whose local chemistry and structure evolve with hydration and ion intercalation. Molecular-scale confinement is connected to the organization of stacked sheets and the transport pathways that emerge through the membrane.</p>
+        <div class="story-kicker">NANOCHANNELS</div>
+        <h3>From local interactions to selective ion transport.</h3>
+        <p>Water organization, ion hydration, surface chemistry, and interlayer spacing collectively determine transport through angstrom- and nanometer-scale channels. We use these relationships to identify how selectivity is created inside the confined membrane environment.</p>
+      </div>
+      <figure class="story-figure direction-two-figure direction-two-nanochannel-figure">
+        <img src="../images/2D_nanochannel.png" alt="Two-dimensional nanochannel structure for confined ion transport">
+        <figcaption>Two-dimensional nanochannel structure used to resolve confined ion transport.</figcaption>
+      </figure>
+    </div>
+
+    <div class="research-story-block direction-two-video-story">
+      <div class="story-text">
+        <div class="story-kicker">CONFINED TRANSPORT VISUALIZATION</div>
+        <h3>Following transport through layered MXene channels.</h3>
+        <p>Layered MXene membranes create nanoscale pathways whose local chemistry and structure evolve with hydration and ion intercalation. The visualization connects molecular-scale confinement with the organization of stacked sheets and the transport pathways that emerge through the membrane.</p>
       </div>
       <figure class="story-figure direction-two-figure direction-two-video-figure">
         <video autoplay muted loop playsinline preload="metadata" aria-label="Visualization of MXene structure and confined transport">
@@ -58,18 +70,6 @@ permalink: /research/
           Your browser does not support the video tag.
         </video>
         <figcaption>Visualization of layered MXene structure and confined transport pathways.</figcaption>
-      </figure>
-    </div>
-
-    <div class="research-story-block direction-two-multiscale-story">
-      <div class="story-text">
-        <div class="story-kicker">NANOCHANNELS</div>
-        <h3>From local interactions to selective ion transport.</h3>
-        <p>Water organization, ion hydration, surface chemistry, and interlayer spacing collectively determine transport through angstrom- and nanometer-scale channels. We use these relationships to identify how selectivity is created inside the confined membrane environment.</p>
-      </div>
-      <figure class="story-figure direction-two-figure direction-two-tiff-note">
-        <div class="tiff-note"><strong>2D nanochannel image</strong><span>The uploaded TIFF is retained as the source image; a browser-compatible PNG/WebP copy will be used here.</span></div>
-        <figcaption>Two-dimensional nanochannel structure used to resolve confined transport.</figcaption>
       </figure>
     </div>
 
