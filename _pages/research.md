@@ -48,37 +48,40 @@ permalink: /research/
 
     <div class="research-story-block direction-two-design-story">
       <div class="story-text">
-        <div class="story-kicker">MATERIALS DESIGN</div>
-        <h3>Building confined channels with tunable chemistry.</h3>
-        <p>Our membrane design begins with 2D building blocks and molecular or ionic intercalants that regulate water content, interlayer spacing, and surface interactions. We then translate these nanoscale controls into scalable membrane architectures while preserving selective transport pathways.</p>
+        <div class="story-kicker">CONFINED STRUCTURE</div>
+        <h3>Visualizing transport through layered MXene channels.</h3>
+        <p>Layered MXene membranes create nanoscale pathways whose local chemistry and structure evolve with hydration and ion intercalation. Molecular-scale confinement is connected to the organization of stacked sheets and the transport pathways that emerge through the membrane.</p>
       </div>
-      <figure class="story-figure direction-two-figure direction-two-design-figure">
-        <img src="../images/research/direction2-design.webp" alt="Design and fabrication of two-dimensional membranes for selective ion transport">
-        <figcaption>2D building blocks, intercalant design, structure modulation, and membrane fabrication for selective ion transport.</figcaption>
+      <figure class="story-figure direction-two-figure direction-two-video-figure">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="Visualization of MXene structure and confined transport">
+          <source src="../images/MXene%20visualization.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Visualization of layered MXene structure and confined transport pathways.</figcaption>
       </figure>
     </div>
 
     <div class="research-story-block direction-two-multiscale-story">
       <div class="story-text">
-        <div class="story-kicker">CONFINEMENT ACROSS SCALES</div>
-        <h3>From molecular interactions to membrane-scale transport.</h3>
-        <p>Confinement begins with molecular-scale solvation and ion–surface interactions, but the resulting transport response emerges across nanochannels, mesoscale morphology, and the full membrane. We use this hierarchy to identify where selectivity is created—and where defects or structural heterogeneity bypass it.</p>
+        <div class="story-kicker">NANOCHANNELS</div>
+        <h3>From local interactions to selective ion transport.</h3>
+        <p>Water organization, ion hydration, surface chemistry, and interlayer spacing collectively determine transport through angstrom- and nanometer-scale channels. We use these relationships to identify how selectivity is created inside the confined membrane environment.</p>
       </div>
-      <figure class="story-figure direction-two-figure direction-two-multiscale-figure">
-        <img src="../images/research/direction2-multiscale.webp" alt="Multiscale membrane structure from molecular interactions to mesoscale and macroscale properties">
-        <figcaption>Connecting molecular interactions, confined transport, mesoscale membrane structure, and macroscopic properties.</figcaption>
+      <figure class="story-figure direction-two-figure direction-two-tiff-note">
+        <div class="tiff-note"><strong>2D nanochannel image</strong><span>The uploaded TIFF is retained as the source image; a browser-compatible PNG/WebP copy will be used here.</span></div>
+        <figcaption>Two-dimensional nanochannel structure used to resolve confined transport.</figcaption>
       </figure>
     </div>
 
     <div class="research-story-block direction-two-characterization-story">
       <div class="story-text">
-        <div class="story-kicker">MULTISCALE CHARACTERIZATION</div>
-        <h3>Resolving structure that controls transport.</h3>
-        <p>Scattering, diffraction, microscopy, and three-dimensional imaging provide complementary windows into membrane organization. SAXS/WAXS resolve nanoscale spacing and orientational order, while FIB-SEM and X-ray tomography reveal subsurface pores, defects, swelling, and heterogeneous ion-transport pathways at the micron scale.</p>
+        <div class="story-kicker">OPERANDO INTERFACE CHARACTERIZATION</div>
+        <h3>Resolving chemistry at hydrated interfaces.</h3>
+        <p>Operando and ambient-pressure spectroscopy complements scattering and three-dimensional imaging by probing chemical states and interfacial environments under realistic conditions. Together, these measurements connect local chemistry with structural evolution and transport.</p>
       </div>
-      <figure class="story-figure direction-two-figure direction-two-characterization-figure">
-        <img src="../images/research/direction2-characterization.webp" alt="Multiscale characterization of membrane surface structure, subsurface morphology, orientational order, water distribution, and ion flux">
-        <figcaption>Linking surface and subsurface structure, orientational order, water distribution, and ion flux across complementary characterization length scales.</figcaption>
+      <figure class="story-figure direction-two-figure direction-two-apxps-figure">
+        <img src="../images/Operando%20APXPS.png" alt="Operando ambient-pressure X-ray photoelectron spectroscopy characterization">
+        <figcaption>Operando APXPS for resolving chemical states and hydrated interfacial environments.</figcaption>
       </figure>
     </div>
   </section>
