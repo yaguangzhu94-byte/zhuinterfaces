@@ -67,9 +67,7 @@
   width: 100%;
 }
 
-.media-panel .media-real {
-  margin-top: 1.4rem;
-}
+.media-panel .media-real { margin-top: 1.4rem; }
 
 .media-radiography-real,
 .media-radiography-video {
@@ -104,6 +102,54 @@
   max-height: 560px;
 }
 
+/* Direction 2 uploaded media */
+.direction-two-video-figure video,
+.direction-two-apxps-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.direction-two-video-figure video {
+  max-height: 560px;
+  background: transparent;
+}
+
+.direction-two-apxps-figure img {
+  max-height: 560px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.direction-two-tiff-note {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tiff-note {
+  border: 1px solid rgba(32,35,33,.14);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  background: rgba(255,255,255,.34);
+  display: grid;
+  gap: .55rem;
+}
+
+.tiff-note strong {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  color: var(--r-ink);
+}
+
+.tiff-note span {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--r-muted);
+  line-height: 1.6;
+}
+
 .media-status {
   position: absolute;
   left: .7rem;
@@ -119,27 +165,16 @@
 }
 
 @media (max-width: 700px) {
-  .research-direction .direction-meta {
-    align-items: flex-start;
-  }
-
-  .research-direction .direction-meta span {
-    font-size: 3rem;
-  }
-
-  .research-direction .direction-meta b {
-    font-size: .95rem;
-    padding-top: .25rem;
-  }
+  .research-direction .direction-meta { align-items: flex-start; }
+  .research-direction .direction-meta span { font-size: 3rem; }
+  .research-direction .direction-meta b { font-size: .95rem; padding-top: .25rem; }
 
   .direction-one-cell-image,
   .media-operando-real img,
   .media-radiography-real img,
-  .media-diffraction-real img {
-    max-height: none;
-  }
+  .media-diffraction-real img,
+  .direction-two-video-figure video,
+  .direction-two-apxps-figure img { max-height: none; }
 
-  .media-radiography-video .direction-one-video {
-    width: 100%;
-  }
+  .media-radiography-video .direction-one-video { width: 100%; }
 }
