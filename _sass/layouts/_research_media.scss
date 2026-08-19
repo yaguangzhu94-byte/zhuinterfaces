@@ -102,17 +102,30 @@
   max-height: 560px;
 }
 
-/* Direction 2 uploaded media */
+/* Direction 2: nanochannel -> MXene video -> APXPS */
+.direction-two-nanochannel-figure img,
 .direction-two-video-figure video,
 .direction-two-apxps-figure img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
 
+.direction-two-nanochannel-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.direction-two-nanochannel-figure img {
+  width: min(100%, 620px);
+  margin: 0 auto;
+}
+
 .direction-two-video-figure video {
+  width: 100%;
   max-height: 560px;
   background: transparent;
 }
@@ -123,31 +136,8 @@
   margin: 0 auto;
 }
 
-.direction-two-tiff-note {
-  min-height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tiff-note {
-  border: 1px solid rgba(32,35,33,.14);
-  padding: clamp(1.4rem, 3vw, 2.4rem);
-  background: rgba(255,255,255,.34);
-  display: grid;
-  gap: .55rem;
-}
-
-.tiff-note strong {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: clamp(1.3rem, 2.2vw, 2rem);
-  color: var(--r-ink);
-}
-
-.tiff-note span {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--r-muted);
-  line-height: 1.6;
+.direction-two-figure figcaption {
+  margin-top: .7rem;
 }
 
 .media-status {
@@ -177,4 +167,5 @@
   .direction-two-apxps-figure img { max-height: none; }
 
   .media-radiography-video .direction-one-video { width: 100%; }
+  .direction-two-nanochannel-figure img { width: 100%; }
 }
