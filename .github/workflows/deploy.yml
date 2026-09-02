@@ -27,6 +27,50 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Prepare optimized news images
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+          import hashlib
+
+          root = Path("images/News/20260724_BNL_HEX_hd")
+          chunk_paths = [
+              root / "part-00.txt",
+              root / "part-01.txt",
+              root / "part-02.txt",
+              root / "part-03.txt",
+              root / "correct-04.txt",
+              root / "part-05.txt",
+              root / "part-06.txt",
+              root / "part-07.txt",
+              root / "correct-08.txt",
+              root / "correct-09.txt",
+          ]
+
+          chunks = []
+          for path in chunk_paths:
+              text = path.read_text(encoding="utf-8").strip()
+              if path.name == "part-03.txt":
+                  # Repair one character sequence introduced while the large
+                  # source image was divided into text-safe repository chunks.
+                  text = text.replace("OvavaidQo8", "OvmaidQo8")
+              chunks.append(text)
+
+          encoded = "".join(chunks)
+          image_bytes = base64.b64decode(encoded, validate=True)
+          expected_sha256 = "99259ad0d531fe7829af0d4b7e48681469addfcfa50f9d4b761f128421065dd2"
+          actual_sha256 = hashlib.sha256(image_bytes).hexdigest()
+          if actual_sha256 != expected_sha256:
+              raise RuntimeError(
+                  f"High-resolution BNL image verification failed: {actual_sha256}"
+              )
+
+          target = Path("images/News/20260724_BNL_HEX_beamtime.webp")
+          target.write_bytes(image_bytes)
+          print(f"Prepared {target} ({len(image_bytes):,} bytes; SHA-256 verified)")
+          PY
+
       - name: Build site
         run: |
           # _config_demo.yml is only for the upstream demo site — ignore it in forks/copies
