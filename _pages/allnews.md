@@ -15,6 +15,29 @@ permalink: /allnews.html
 {% endif %}
 
 <div class="news-page" markdown="0">
+  <section class="news-recruitment" aria-labelledby="news-recruitment-title">
+    <div class="news-recruitment__status">
+      <span class="news-recruitment__dot" aria-hidden="true"></span>
+      <span>Open positions</span>
+    </div>
+
+    <div class="news-recruitment__copy">
+      <p class="news-recruitment__kicker">Join the Zhu Interfaces Lab</p>
+      <h2 id="news-recruitment-title">We are recruiting <em>Ph.D. students and postdoctoral researchers.</em></h2>
+      <p class="news-recruitment__description">We welcome candidates with expertise in <strong>electrocatalysis</strong> and <strong>nanomaterials synthesis</strong> for Spring 2026 and Fall 2027.</p>
+    </div>
+
+    <div class="news-recruitment__aside">
+      <div class="news-recruitment__terms" aria-label="Recruitment terms">
+        <span>Spring 2026</span>
+        <span>Fall 2027</span>
+      </div>
+      <a class="news-recruitment__contact" href="mailto:{{ site.email }}?subject=Prospective%20Zhu%20Lab%20Applicant">
+        Contact Prof. Zhu <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
   {% if featured %}
   <header class="news-hero" aria-labelledby="news-page-title">
     <div class="news-hero__content">
@@ -58,24 +81,8 @@ permalink: /allnews.html
   </header>
   {% endif %}
 
-  <section class="news-intro" aria-label="About lab news">
-    <div class="news-intro__label">
-      <span>FIELD NOTES</span>
-      <strong>2026—PRESENT</strong>
-    </div>
-    <p class="news-intro__statement">From new beginnings to new discoveries, this is where we document the moments that move the Zhu Interfaces Lab forward.</p>
-  </section>
-
-  <section class="news-archive" id="latest-news" aria-labelledby="latest-news-title">
-    {% assign news_count = site.data.news | size %}
-    <div class="news-archive__header">
-      <div>
-        <p class="news-section-kicker">THE LATEST</p>
-        <h2 id="latest-news-title">From the lab</h2>
-      </div>
-      <p class="news-archive__summary">Research updates, people, publications, presentations, and milestones—collected in one evolving archive.</p>
-      <span class="news-archive__count">{{ news_count | prepend: '0' }} {% if news_count == 1 %}STORY{% else %}STORIES{% endif %}</span>
-    </div>
+  <section class="news-archive news-archive--streamlined" id="latest-news" aria-labelledby="latest-news-title">
+    <h2 class="news-sr-only" id="latest-news-title">Latest news from the Zhu Interfaces Lab</h2>
 
     {% for article in site.data.news %}
     <article class="news-story{% if forloop.first %} news-story--featured{% endif %}">
