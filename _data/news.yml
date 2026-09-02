@@ -1,5 +1,42 @@
 # News items for the Zhu Interfaces Lab.
 # Keep the newest item first. The first item becomes the page hero.
+- date: "2026-05-18"
+  display_date: "May 18, 2026"
+  month: "MAY"
+  day: "18"
+  year: "2026"
+  category: "NSF ENGINEERING RESEARCH CENTER"
+  location: "LUBBOCK, TEXAS"
+  headline: "Collaboration at the 2026 CASFER NSF Site Visit"
+  summary: >-
+    The Zhu Interfaces Lab joined the CASFER community for its 2026 NSF site
+    visit—an energizing opportunity to build ambitious collaborations with
+    outstanding scientists and engineers working toward sustainable and
+    distributed fertilizer production.
+  body: >-
+    As a member of the NSF Engineering Research Center for Advancing
+    Sustainable and Distributed Fertilizer Production (CASFER), Prof. Yaguang
+    Zhu participated in the annual site visit hosted at Texas Tech University.
+    Supported by the U.S. National Science Foundation, CASFER brings together a
+    multidisciplinary team across five partner universities. The center offers
+    an exceptional platform for the Zhu Interfaces Lab to connect interfacial
+    design, electrocatalysis, nanomaterials synthesis, advanced characterization,
+    and resource recovery through collaborative research addressing resilient
+    and sustainable fertilizer production.
+  funding: "Supported by the U.S. National Science Foundation"
+  image: "/images/News/20260518_NSF site visit.png"
+  image_alt: "CASFER faculty, researchers, students, and collaborators gathered for the 2026 NSF site visit at Texas Tech University"
+  links:
+    - label: "Visit CASFER"
+      url: "https://www.casfer.us/"
+    - label: "NSF Engineering Research Centers"
+      url: "https://www.nsf.gov/eng/engineering-research-centers"
+  tags:
+    - "NSF ERC"
+    - "CASFER"
+    - "Collaboration"
+    - "Sustainable Fertilizer"
+
 - date: "2026-01-12"
   display_date: "January 12, 2026"
   month: "JAN"
