@@ -47,6 +47,11 @@ permalink: /allnews.html
         {% endif %}
 
         <article class="news-card">
+          <header class="news-card__datebar">
+            <time datetime="{{ article.date }}">{{ article.display_date }}</time>
+            <span>{{ article.category }}</span>
+          </header>
+
           <figure class="news-card__media">
             <img src="{{ article_image }}"
                  alt="{{ article.image_alt | escape }}"
@@ -59,12 +64,6 @@ permalink: /allnews.html
           </figure>
 
           <div class="news-card__content">
-            <div class="news-card__meta">
-              <time datetime="{{ article.date }}">{{ article.display_date }}</time>
-              <span aria-hidden="true">•</span>
-              <span>{{ article.category }}</span>
-            </div>
-
             <h2>{{ article.headline }}</h2>
 
             {% if article.summary %}
