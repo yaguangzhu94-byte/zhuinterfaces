@@ -68,6 +68,19 @@ permalink: /allnews.html
            decoding="async"
            onerror="this.hidden=true">
       <div class="news-hero__veil" aria-hidden="true"></div>
+      {% if featured.facility_mark %}
+      <div class="news-hero__facility-mark" aria-label="Brookhaven National Laboratory, National Synchrotron Light Source II, HEX beamline">
+        <svg viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="15"></circle>
+          <path d="M5 22h16l14-10"></path>
+          <circle class="news-facility-dot" cx="36" cy="11" r="3"></circle>
+        </svg>
+        <div>
+          <strong>BNL</strong>
+          <span>NSLS-II · HEX</span>
+        </div>
+      </div>
+      {% endif %}
       <div class="news-hero__number" aria-hidden="true">01</div>
       <div class="news-hero__date">
         <span>{{ featured.month }}</span>
@@ -75,7 +88,7 @@ permalink: /allnews.html
         <small>{{ featured.year }}</small>
       </div>
       <div class="news-hero__caption">
-        <span>Texas Tech University</span>
+        <span>{{ featured.venue | default: "Texas Tech University" }}</span>
         <small>{{ featured.location | capitalize }}</small>
       </div>
       {% if featured.photo_credit %}
@@ -113,6 +126,17 @@ permalink: /allnews.html
           <i aria-hidden="true"></i>
           <span>{{ article.location }}</span>
         </div>
+        {% if article.facility_mark %}
+        <div class="news-story__facility-mark" aria-label="Brookhaven National Laboratory, National Synchrotron Light Source II, HEX beamline">
+          <svg viewBox="0 0 34 34" aria-hidden="true">
+            <circle cx="17" cy="17" r="11"></circle>
+            <path d="M3 17h13l11-8"></path>
+            <circle class="news-facility-dot" cx="28" cy="8" r="2.5"></circle>
+          </svg>
+          <strong>BNL</strong>
+          <span>NSLS-II · HEX</span>
+        </div>
+        {% endif %}
         {% if article.funding %}
         <div class="news-story__funding" aria-label="Funding acknowledgement">
           <span>NSF-FUNDED</span>
@@ -132,8 +156,12 @@ permalink: /allnews.html
           {% endif %}
         {% endunless %}
 
+        {% if article.summary %}
         <p class="news-story__dek">{{ article.summary }}</p>
+        {% endif %}
+        {% if article.body %}
         <p class="news-story__body">{{ article.body }}</p>
+        {% endif %}
 
         {% if article.tags %}
         <div class="news-story__tags" aria-label="Research themes">
