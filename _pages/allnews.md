@@ -52,47 +52,52 @@ permalink: /allnews.html
             <span>{{ article.category }}</span>
           </header>
 
-          <figure class="news-card__media">
-            <img src="{{ article_image }}"
-                 alt="{{ article.image_alt | escape }}"
-                 {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
-                 decoding="async"
-                 onerror="this.onerror=null;this.src='{{ '/images/News/ttu-campus-placeholder.svg' | relative_url }}';">
-            {% if article.photo_credit %}
-              <figcaption>Photo: {{ article.photo_credit }}</figcaption>
-            {% endif %}
-          </figure>
+          <div class="news-card__main">
+            <figure class="news-card__media">
+              <img src="{{ article_image }}"
+                   alt="{{ article.image_alt | escape }}"
+                   {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                   decoding="async"
+                   onerror="this.onerror=null;this.src='{{ '/images/News/ttu-campus-placeholder.svg' | relative_url }}';">
+              {% if article.photo_credit %}
+                <figcaption>Photo: {{ article.photo_credit }}</figcaption>
+              {% endif %}
+            </figure>
 
-          <div class="news-card__content">
-            <h2>{{ article.headline }}</h2>
+            <div class="news-card__content">
+              <h2>{{ article.headline }}</h2>
 
-            {% if article.summary %}
-              <p class="news-card__summary">{{ article.summary }}</p>
-            {% endif %}
+              {% if article.summary %}
+                <p class="news-card__summary">{{ article.summary }}</p>
+              {% endif %}
 
-            {% if article.body %}
-              <p class="news-card__body">{{ article.body }}</p>
-            {% endif %}
-
-            {% if article.funding %}
-              <p class="news-card__funding">{{ article.funding }}</p>
-            {% endif %}
-
-            <div class="news-card__location">
-              {% if article.venue %}<strong>{{ article.venue }}</strong>{% endif %}
-              <span>{{ article.location }}</span>
-            </div>
-
-            {% if article.links %}
-              <div class="news-card__links">
-                {% for link in article.links %}
-                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                    {{ link.label }} <span aria-hidden="true">↗</span>
-                  </a>
-                {% endfor %}
+              <div class="news-card__location">
+                {% if article.venue %}<strong>{{ article.venue }}</strong>{% endif %}
+                <span>{{ article.location }}</span>
               </div>
-            {% endif %}
+
+              {% if article.links %}
+                <div class="news-card__links">
+                  {% for link in article.links %}
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                      {{ link.label }} <span aria-hidden="true">↗</span>
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
           </div>
+
+          {% if article.body or article.funding %}
+            <div class="news-card__details">
+              {% if article.funding %}
+                <p class="news-card__funding">{{ article.funding }}</p>
+              {% endif %}
+              {% if article.body %}
+                <p class="news-card__body">{{ article.body }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
         </article>
       {% endfor %}
     </div>
