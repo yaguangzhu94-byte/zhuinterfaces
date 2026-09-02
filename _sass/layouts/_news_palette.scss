@@ -1,0 +1,156 @@
+// =============================================================
+// News palette refinement — warm ivory + Zhu Lab teal
+// Loaded after the original News styles so the page remains easy
+// to maintain while avoiding the previous black/crimson treatment.
+// =============================================================
+
+.news-page {
+  --news-red: #2d7771;
+  --news-red-deep: #1f5f5a;
+  --news-paper: #f5f3ed;
+  --news-paper-deep: #dce9e5;
+  --news-ink: #202321;
+  --news-cream: #fbfaf6;
+}
+
+[data-bs-theme="dark"] .news-page {
+  --news-red: #67b9af;
+  --news-red-deep: #8fd3ca;
+  --news-paper: #252925;
+  --news-paper-deep: #303832;
+  --news-ink: #f1eee7;
+  --news-cream: #1c201d;
+}
+
+.news-hero__content {
+  background:
+    radial-gradient(circle at 8% 90%, rgba(45, 119, 113, 0.1), transparent 31%),
+    var(--news-paper);
+}
+
+.news-hero__content::before {
+  border-color: rgba(45, 119, 113, 0.22);
+}
+
+.news-hero__content::after {
+  border-color: rgba(45, 119, 113, 0.32);
+}
+
+.news-hero__veil {
+  background: linear-gradient(135deg, rgba(45, 119, 113, 0.14), transparent 47%);
+}
+
+.news-hero__date {
+  box-shadow: 0 16px 35px rgba(24, 82, 77, 0.27);
+}
+
+.news-recruitment {
+  color: var(--news-ink);
+  background:
+    radial-gradient(circle at 92% -25%, rgba(45, 119, 113, 0.2), transparent 40%),
+    linear-gradient(118deg, #edf5f2 0%, #f8f6ef 56%, #e2efeb 100%);
+  border-color: rgba(45, 119, 113, 0.22);
+  box-shadow: 0 18px 52px rgba(38, 66, 61, 0.12);
+}
+
+.news-recruitment::after {
+  border-color: rgba(45, 119, 113, 0.14);
+  box-shadow:
+    0 0 0 2.5rem rgba(45, 119, 113, 0.035),
+    0 0 0 5rem rgba(45, 119, 113, 0.022);
+}
+
+.news-recruitment__status {
+  color: #456c67;
+}
+
+.news-recruitment__dot {
+  background: #2d7771;
+  box-shadow: 0 0 0 0.36rem rgba(45, 119, 113, 0.14);
+}
+
+.news-recruitment__kicker {
+  color: #2d7771;
+}
+
+.news-recruitment__copy h2 {
+  color: var(--news-ink);
+}
+
+.news-recruitment__copy h2 em {
+  color: #2d7771;
+}
+
+.news-recruitment__description {
+  color: #5b6762;
+}
+
+.news-recruitment__description strong {
+  color: var(--news-ink);
+}
+
+.news-recruitment__terms span {
+  color: #2b6863;
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(45, 119, 113, 0.28);
+}
+
+.news-recruitment__contact {
+  color: #fff !important;
+  background: #2d7771;
+  box-shadow: 0 8px 24px rgba(31, 95, 90, 0.2);
+}
+
+.news-recruitment__contact:hover {
+  color: #fff !important;
+  background: #1f5f5a;
+  box-shadow: 0 12px 30px rgba(31, 95, 90, 0.26);
+}
+
+.news-recruitment__contact:focus-visible {
+  outline-color: #2d7771;
+}
+
+@keyframes news-recruitment-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0.36rem rgba(45, 119, 113, 0.14);
+  }
+  50% {
+    box-shadow: 0 0 0 0.62rem rgba(45, 119, 113, 0.05);
+  }
+}
+
+@media (max-width: 980px) {
+  .news-recruitment__aside {
+    border-top-color: rgba(45, 119, 113, 0.17);
+  }
+}
+
+[data-bs-theme="dark"] .news-recruitment {
+  color: var(--news-ink);
+  background:
+    radial-gradient(circle at 92% -25%, rgba(103, 185, 175, 0.15), transparent 40%),
+    linear-gradient(118deg, #26312d 0%, #252a27 58%, #293732 100%);
+  border-color: rgba(103, 185, 175, 0.22);
+}
+
+[data-bs-theme="dark"] .news-recruitment__status,
+[data-bs-theme="dark"] .news-recruitment__description {
+  color: rgba(241, 238, 231, 0.75);
+}
+
+[data-bs-theme="dark"] .news-recruitment__copy h2,
+[data-bs-theme="dark"] .news-recruitment__description strong {
+  color: #f1eee7;
+}
+
+[data-bs-theme="dark"] .news-recruitment__copy h2 em,
+[data-bs-theme="dark"] .news-recruitment__kicker {
+  color: #8fd3ca;
+}
+
+[data-bs-theme="dark"] .news-recruitment__terms span {
+  color: #d8f1ed;
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(143, 211, 202, 0.28);
+}
