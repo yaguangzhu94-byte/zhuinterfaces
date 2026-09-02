@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Texas Tech campus illustration</title>
+  <desc id="desc">An original architectural illustration inspired by Memorial Circle and the Administration Building at Texas Tech University.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8cacae"/>
+      <stop offset="0.55" stop-color="#e8d9c4"/>
+      <stop offset="1" stop-color="#f2d3ad"/>
+    </linearGradient>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#697b60"/>
+      <stop offset="1" stop-color="#2f433a"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e5d7c1"/>
+      <stop offset="1" stop-color="#bda98e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1c241f" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1240" cy="190" r="110" fill="#fff1cf" opacity="0.55"/>
+  <path d="M0 660 C310 590 520 625 800 610 C1070 595 1310 555 1600 640 V1000 H0Z" fill="url(#lawn)"/>
+  <path d="M700 1000 L770 610 H830 L900 1000Z" fill="#c89f79" opacity="0.95"/>
+  <path d="M748 1000 L790 610 H810 L852 1000Z" fill="#ead7bb" opacity="0.55"/>
+  <ellipse cx="800" cy="810" rx="330" ry="122" fill="none" stroke="#d8b990" stroke-width="34" opacity="0.62"/>
+  <ellipse cx="800" cy="810" rx="250" ry="88" fill="none" stroke="#724b3b" stroke-width="7" opacity="0.55"/>
+
+  <g filter="url(#shadow)">
+    <path d="M260 600 V380 H535 V315 H1065 V380 H1340 V600Z" fill="url(#stone)"/>
+    <path d="M230 380 L400 275 L570 380Z" fill="#9b453a"/>
+    <path d="M1030 380 L1200 275 L1370 380Z" fill="#9b453a"/>
+    <path d="M505 315 L800 180 L1095 315Z" fill="#aa4d3f"/>
+    <rect x="715" y="235" width="170" height="365" fill="#cfbda1"/>
+    <path d="M695 235 L800 135 L905 235Z" fill="#a5453a"/>
+    <rect x="748" y="78" width="104" height="157" fill="#d7c5aa"/>
+    <path d="M732 78 L800 25 L868 78Z" fill="#934036"/>
+    <rect x="775" y="105" width="50" height="70" rx="25" fill="#526564"/>
+    <circle cx="800" cy="140" r="13" fill="#e8d9be"/>
+
+    <g fill="#485a59">
+      <path d="M315 445 h58 v108 h-58z"/><path d="M407 445 h58 v108 h-58z"/>
+      <path d="M1135 445 h58 v108 h-58z"/><path d="M1227 445 h58 v108 h-58z"/>
+      <path d="M560 390 h52 v95 h-52z"/><path d="M640 390 h52 v95 h-52z"/>
+      <path d="M908 390 h52 v95 h-52z"/><path d="M988 390 h52 v95 h-52z"/>
+    </g>
+    <g fill="#394b4a">
+      <path d="M750 420 q50-72 100 0 v180 h-100z"/>
+      <path d="M570 515 q26-38 52 0 v85 h-52z"/>
+      <path d="M978 515 q26-38 52 0 v85 h-52z"/>
+    </g>
+    <g fill="none" stroke="#f3e8d6" stroke-width="10">
+      <path d="M315 445 q29-36 58 0"/><path d="M407 445 q29-36 58 0"/>
+      <path d="M1135 445 q29-36 58 0"/><path d="M1227 445 q29-36 58 0"/>
+      <path d="M560 390 q26-34 52 0"/><path d="M640 390 q26-34 52 0"/>
+      <path d="M908 390 q26-34 52 0"/><path d="M988 390 q26-34 52 0"/>
+    </g>
+  </g>
+
+  <g fill="#2d4439">
+    <circle cx="245" cy="620" r="72"/><circle cx="330" cy="640" r="92"/>
+    <circle cx="1270" cy="638" r="88"/><circle cx="1360" cy="610" r="68"/>
+    <circle cx="505" cy="655" r="61"/><circle cx="1090" cy="650" r="64"/>
+  </g>
+  <g fill="#526755" opacity="0.88">
+    <circle cx="205" cy="625" r="34"/><circle cx="365" cy="605" r="44"/>
+    <circle cx="1230" cy="600" r="42"/><circle cx="1395" cy="635" r="38"/>
+  </g>
+
+  <g stroke="#efe6d5" stroke-width="9" stroke-linecap="round">
+    <path d="M735 790 V610"/><path d="M800 785 V600"/><path d="M865 790 V610"/>
+  </g>
+  <g>
+    <path d="M735 630 h95 v42 h-95z" fill="#b32134"/>
+    <path d="M800 620 h85 v36 h-85z" fill="#f0e6d2"/>
+    <path d="M865 635 h80 v34 h-80z" fill="#7f1d2a"/>
+  </g>
+  <rect width="1600" height="1000" fill="none" stroke="#b32134" stroke-width="18" opacity="0.55"/>
+</svg>
