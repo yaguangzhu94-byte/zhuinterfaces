@@ -1,20 +1,34 @@
-# News items shown on the home page sidebar.
-# The 3 most recent are shown; all appear on /allnews.
-# Each entry needs: date, headline
-- date: 6 February, 1986
-  headline: "Appointed to the Rogers Commission investigating the Space Shuttle Challenger disaster"
-
-- date: 1 January, 1980
-  headline: "National Medal of Science awarded by President Carter"
-
-- date: 21 October, 1965
-  headline: "Awarded the Nobel Prize in Physics for contributions to quantum electrodynamics"
-
-- date: 1 September, 1961
-  headline: "The Feynman Lectures on Physics begins publication"
-
-- date: 1 June, 1959
-  headline: "Delivered 'There's Plenty of Room at the Bottom' talk at Caltech APS meeting"
-
-- date: 1 January, 1951
-  headline: "Joined the faculty at California Institute of Technology"
+# News items for the Zhu Interfaces Lab.
+# Keep the newest item first. The first item becomes the page hero.
+- date: "2026-01-12"
+  display_date: "January 12, 2026"
+  month: "JAN"
+  day: "12"
+  year: "2026"
+  category: "LAB LAUNCH"
+  location: "LUBBOCK, TEXAS"
+  headline: "A new chapter at Texas Tech"
+  summary: >-
+    The Zhu Interfaces Lab launches at Texas Tech University, bringing
+    interfacial design and advanced characterization together to understand
+    materials and processes under real working conditions.
+  body: >-
+    On January 12, 2026, Dr. Yaguang Zhu joined Texas Tech University’s
+    Department of Civil, Environmental & Construction Engineering (CECE) and
+    the Institute for Sustainability and Circular Economy (ISCE). The lab is
+    building a research program that reveals how interfaces govern transport
+    and transformations across materials, electrochemical devices, and
+    sustainable systems.
+  image: "https://www.ttu.edu/campaign/images/pri-3.jpg"
+  image_alt: "Aerial view of Memorial Circle and the Administration Building at Texas Tech University"
+  photo_credit: "Texas Tech University"
+  photo_url: "https://www.ttu.edu/campaign/"
+  links:
+    - label: "Visit TTU CECE"
+      url: "https://www.depts.ttu.edu/ceweb/"
+    - label: "Visit TTU ISCE"
+      url: "https://www.depts.ttu.edu/isce/"
+  tags:
+    - "Interfacial Design"
+    - "Advanced Characterization"
+    - "Sustainable Systems"
