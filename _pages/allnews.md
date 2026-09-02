@@ -127,34 +127,4 @@ permalink: /allnews.html
     </article>
     {% endfor %}
   </section>
-
-  <section class="news-focus" aria-labelledby="news-focus-title">
-    <div class="news-focus__heading">
-      <p>THE WORK AHEAD</p>
-      <h2 id="news-focus-title">Interfaces designed.<br>Mechanisms revealed.</h2>
-    </div>
-    <div class="news-focus__grid">
-      <div class="news-focus__item">
-        <span>01</span>
-        <strong>Interfacial design</strong>
-        <p>Control the molecular environments where transport and transformation begin.</p>
-      </div>
-      <div class="news-focus__item">
-        <span>02</span>
-        <strong>Advanced characterization</strong>
-        <p>Observe structure, chemistry, and dynamics under real working conditions.</p>
-      </div>
-      <div class="news-focus__item">
-        <span>03</span>
-        <strong>Sustainable systems</strong>
-        <p>Translate mechanistic insight into materials and processes with lasting impact.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="news-endnote" aria-label="End of current news archive">
-    <span aria-hidden="true"></span>
-    <p>More stories from the Zhu Interfaces Lab are on the way.</p>
-    <span aria-hidden="true"></span>
-  </footer>
 </div>
