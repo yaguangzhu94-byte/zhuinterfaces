@@ -1,5 +1,30 @@
 # News items for the Zhu Interfaces Lab.
 # Keep the newest item first. The first item becomes the page hero.
+- date: "2026-07-24"
+  display_date: "July 24, 2026"
+  month: "JUL"
+  day: "24"
+  year: "2026"
+  category: "SYNCHROTRON BEAMTIME"
+  location: "UPTON, NEW YORK"
+  venue: "Brookhaven National Laboratory"
+  headline: "Ultrafast operando diffraction at BNL"
+  summary: >-
+    At the NSLS-II HEX beamline, we tracked rapid diffraction changes during
+    electrolysis in real time.
+  image: "/images/News/20260724_BNL_HEX_beamtime.webp"
+  image_alt: "Yaguang Zhu at the HEX beamline at Brookhaven National Laboratory during an operando electrolysis experiment"
+  facility_mark: true
+  links:
+    - label: "HEX Beamline"
+      url: "https://www.bnl.gov/nsls2/beamlines/beamline.php?r=27-ID"
+    - label: "NSLS-II"
+      url: "https://www.bnl.gov/nsls2/"
+  tags:
+    - "Operando XRD"
+    - "Electrolysis"
+    - "Ultrafast Detection"
+
 - date: "2026-05-18"
   display_date: "May 18, 2026"
   month: "MAY"
@@ -7,6 +32,7 @@
   year: "2026"
   category: "NSF ENGINEERING RESEARCH CENTER"
   location: "LUBBOCK, TEXAS"
+  venue: "Texas Tech University"
   headline: "Collaboration at the 2026 CASFER NSF Site Visit"
   summary: >-
     The Zhu Interfaces Lab joined the CASFER community for its 2026 NSF site
@@ -44,6 +70,7 @@
   year: "2026"
   category: "LAB LAUNCH"
   location: "LUBBOCK, TEXAS"
+  venue: "Texas Tech University"
   headline: "A new chapter at Texas Tech"
   summary: >-
     The Zhu Interfaces Lab launches at Texas Tech University, bringing
