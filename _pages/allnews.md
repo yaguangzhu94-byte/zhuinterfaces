@@ -83,14 +83,6 @@ permalink: /allnews.html
               <span>{{ article.location }}</span>
             </div>
 
-            {% if article.tags %}
-              <div class="news-card__tags" aria-label="Topics">
-                {% for tag in article.tags %}
-                  <span>{{ tag }}</span>
-                {% endfor %}
-              </div>
-            {% endif %}
-
             {% if article.links %}
               <div class="news-card__links">
                 {% for link in article.links %}
