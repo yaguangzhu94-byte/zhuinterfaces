@@ -44,6 +44,12 @@ permalink: /allnews.html
       <p class="news-hero__eyebrow"><span aria-hidden="true"></span>Zhu Interfaces Lab</p>
       <h1 id="news-page-title">News <em>&amp;</em><br>Milestones</h1>
       <p class="news-hero__lede">A record of the people, ideas, collaborations, and discoveries shaping our lab.</p>
+      {% if featured.funding %}
+      <div class="news-hero__funding" aria-label="Funding acknowledgement">
+        <span>NSF-FUNDED ERC</span>
+        <strong>{{ featured.funding }}</strong>
+      </div>
+      {% endif %}
       <a class="news-hero__jump" href="#latest-news">
         <span>Read the latest</span>
         <span class="news-hero__jump-icon" aria-hidden="true">↓</span>
@@ -85,6 +91,11 @@ permalink: /allnews.html
     <h2 class="news-sr-only" id="latest-news-title">Latest news from the Zhu Interfaces Lab</h2>
 
     {% for article in site.data.news %}
+    {% if article.image contains '://' %}
+      {% assign article_image = article.image %}
+    {% else %}
+      {% assign article_image = article.image | relative_url %}
+    {% endif %}
     <article class="news-story{% if forloop.first %} news-story--featured{% endif %}">
       <div class="news-story__rail">
         <time class="news-story__date" datetime="{{ article.date }}">
@@ -102,7 +113,25 @@ permalink: /allnews.html
           <i aria-hidden="true"></i>
           <span>{{ article.location }}</span>
         </div>
+        {% if article.funding %}
+        <div class="news-story__funding" aria-label="Funding acknowledgement">
+          <span>NSF-FUNDED</span>
+          <strong>{{ article.funding }}</strong>
+        </div>
+        {% endif %}
         <h3>{{ article.headline }}</h3>
+
+        {% unless forloop.first %}
+          {% if article.image %}
+          <figure class="news-story__media">
+            <img src="{{ article_image }}" alt="{{ article.image_alt | escape }}" loading="lazy" decoding="async">
+            {% if article.photo_credit %}
+            <figcaption>Photo: {{ article.photo_credit }}</figcaption>
+            {% endif %}
+          </figure>
+          {% endif %}
+        {% endunless %}
+
         <p class="news-story__dek">{{ article.summary }}</p>
         <p class="news-story__body">{{ article.body }}</p>
 
