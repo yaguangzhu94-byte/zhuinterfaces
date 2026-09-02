@@ -53,6 +53,7 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 @import "layouts/news_recruitment";
 @import "layouts/news_palette";
 @import "layouts/news_story_media";
+@import "layouts/news_cards";
 
 // Utilities
 @import "utilities/dark-mode";
