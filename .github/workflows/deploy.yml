@@ -95,7 +95,7 @@ jobs:
                   reu_root / "part-10a.txt",
                   reu_root / "part-10b.txt",
               ],
-              Path("images/News/20260701_REU.webp"),
+              Path("images/News/20260701_REU_v2.webp"),
               "2c6ae0e2801dadbd78bd86cb757c010f179efbbf50a4a73b71554c4d13871d54",
           )
           PY
