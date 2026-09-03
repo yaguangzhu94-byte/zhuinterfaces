@@ -34,41 +34,70 @@ jobs:
           import base64
           import hashlib
 
-          root = Path("images/News/20260724_BNL_HEX_hd")
-          chunk_paths = [
-              root / "part-00.txt",
-              root / "part-01.txt",
-              root / "part-02.txt",
-              root / "part-03.txt",
-              root / "correct-04.txt",
-              root / "part-05.txt",
-              root / "part-06.txt",
-              root / "part-07.txt",
-              root / "correct-08.txt",
-              root / "correct-09.txt",
-          ]
+          def reconstruct(chunk_paths, target, expected_sha256, replacements=None):
+              replacements = replacements or {}
+              chunks = []
 
-          chunks = []
-          for path in chunk_paths:
-              text = path.read_text(encoding="utf-8").strip()
-              if path.name == "part-03.txt":
-                  # Repair one character sequence introduced while the large
-                  # source image was divided into text-safe repository chunks.
-                  text = text.replace("OvavaidQo8", "OvmaidQo8")
-              chunks.append(text)
+              for path in chunk_paths:
+                  text = path.read_text(encoding="utf-8").strip()
+                  for old, new in replacements.get(path.name, []):
+                      text = text.replace(old, new)
+                  chunks.append(text)
 
-          encoded = "".join(chunks)
-          image_bytes = base64.b64decode(encoded, validate=True)
-          expected_sha256 = "99259ad0d531fe7829af0d4b7e48681469addfcfa50f9d4b761f128421065dd2"
-          actual_sha256 = hashlib.sha256(image_bytes).hexdigest()
-          if actual_sha256 != expected_sha256:
-              raise RuntimeError(
-                  f"High-resolution BNL image verification failed: {actual_sha256}"
+              encoded = "".join(chunks)
+              image_bytes = base64.b64decode(encoded, validate=True)
+              actual_sha256 = hashlib.sha256(image_bytes).hexdigest()
+              if actual_sha256 != expected_sha256:
+                  raise RuntimeError(
+                      f"Image verification failed for {target}: {actual_sha256}"
+                  )
+
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(image_bytes)
+              print(
+                  f"Prepared {target} "
+                  f"({len(image_bytes):,} bytes; SHA-256 verified)"
               )
 
-          target = Path("images/News/20260724_BNL_HEX_beamtime.webp")
-          target.write_bytes(image_bytes)
-          print(f"Prepared {target} ({len(image_bytes):,} bytes; SHA-256 verified)")
+          bnl_root = Path("images/News/20260724_BNL_HEX_hd")
+          reconstruct(
+              [
+                  bnl_root / "part-00.txt",
+                  bnl_root / "part-01.txt",
+                  bnl_root / "part-02.txt",
+                  bnl_root / "part-03.txt",
+                  bnl_root / "correct-04.txt",
+                  bnl_root / "part-05.txt",
+                  bnl_root / "part-06.txt",
+                  bnl_root / "part-07.txt",
+                  bnl_root / "correct-08.txt",
+                  bnl_root / "correct-09.txt",
+              ],
+              Path("images/News/20260724_BNL_HEX_beamtime.webp"),
+              "99259ad0d531fe7829af0d4b7e48681469addfcfa50f9d4b761f128421065dd2",
+              {"part-03.txt": [("OvavaidQo8", "OvmaidQo8")]},
+          )
+
+          reu_root = Path("images/News/20260701_REU_fixed")
+          reconstruct(
+              [
+                  reu_root / "part-00.txt",
+                  reu_root / "part-01.txt",
+                  reu_root / "part-02.txt",
+                  reu_root / "part-03.txt",
+                  reu_root / "part-04.txt",
+                  reu_root / "part-05.txt",
+                  reu_root / "part-06.txt",
+                  reu_root / "part-07.txt",
+                  reu_root / "part-08.txt",
+                  reu_root / "part-09a.txt",
+                  reu_root / "part-09b.txt",
+                  reu_root / "part-10a.txt",
+                  reu_root / "part-10b.txt",
+              ],
+              Path("images/News/20260701_REU.webp"),
+              "2c6ae0e2801dadbd78bd86cb757c010f179efbbf50a4a73b71554c4d13871d54",
+          )
           PY
 
       - name: Build site
