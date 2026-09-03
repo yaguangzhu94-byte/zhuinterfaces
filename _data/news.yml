@@ -21,6 +21,37 @@
     - label: "NSLS-II"
       url: "https://www.bnl.gov/nsls2/"
 
+- date: "2026-07-01"
+  display_date: "July 1, 2026"
+  month: "JUL"
+  day: "01"
+  year: "2026"
+  category: "CASFER REU PROGRAM"
+  location: "LUBBOCK, TEXAS"
+  venue: "Texas Tech University"
+  headline: "Welcoming Jeremiah and Sharvani as REU summer undergraduate researchers"
+  summary: >-
+    Jeremiah and Sharvani joined the Zhu Interfaces Lab through the CASFER
+    Research Experience for Undergraduates program for hands-on research,
+    mentorship, and professional development.
+  body: >-
+    CASFER's summer REU places undergraduate students in active research
+    projects and connects them with faculty, postdoctoral researchers, and
+    graduate students. During the program, Jeremiah and Sharvani developed
+    laboratory and professional skills while contributing to research
+    connected to sustainable fertilizer production and the nitrogen circular
+    economy. Their participation expanded undergraduate research opportunities
+    at Texas Tech and strengthened the lab's engagement with the broader
+    Lubbock STEM community.
+  funding: "Supported by the U.S. National Science Foundation through CASFER"
+  image: "/images/News/20260701_REU.webp"
+  image_alt: "Zhu Interfaces Lab members and CASFER REU summer undergraduate researchers in a Texas Tech laboratory"
+  links:
+    - label: "CASFER REU Program"
+      url: "https://www.casfer.us/reu-program"
+    - label: "CASFER Summer Programs"
+      url: "https://www.casfer.us/summer-program"
+
 - date: "2026-05-18"
   display_date: "May 18, 2026"
   month: "MAY"
@@ -68,7 +99,7 @@
     interfacial design and advanced characterization together to understand
     materials and processes under real working conditions.
   body: >-
-    On January 12, 2026, Dr. Yaguang Zhu joined Texas Tech University’s
+    On January 12, 2026, Dr. Yaguang Zhu joined Texas Tech University's
     Department of Civil, Environmental & Construction Engineering (CECE) and
     the Institute for Sustainability and Circular Economy (ISCE). The lab is
     building a research program that reveals how interfaces govern transport
