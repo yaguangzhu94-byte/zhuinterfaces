@@ -27,7 +27,7 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Prepare optimized news images
+      - name: Prepare optimized images
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -97,6 +97,18 @@ jobs:
               ],
               Path("images/News/20260701_REU_v2.webp"),
               "2c6ae0e2801dadbd78bd86cb757c010f179efbbf50a4a73b71554c4d13871d54",
+          )
+
+          rylee_root = Path("images/team/rylee-young-data")
+          reconstruct(
+              [
+                  rylee_root / "part-00.txt",
+                  rylee_root / "part-01.txt",
+                  rylee_root / "part-02.txt",
+                  rylee_root / "part-03.txt",
+              ],
+              Path("images/team/rylee-young.webp"),
+              "f16b3fc015271f1b3b67f84e1b4fca22544bb16aaf35fb251f60073b9d66b3a2",
           )
           PY
 
