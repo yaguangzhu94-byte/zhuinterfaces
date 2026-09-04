@@ -153,7 +153,8 @@ permalink: /team/
       <h2>Rylee Young</h2>
       <p class="people-dialog-role">Chemical Engineering · Texas Tech University</p>
       <p><strong>Year:</strong> Sophomore<br><strong>Program:</strong> Honors College<br><strong>Minor:</strong> Renewable Energy</p>
-      <p>Rylee Young is a sophomore at Texas Tech University and a proud member of the Honors College. She is pursuing a major in Chemical Engineering and a minor in Renewable Energy. This is her first undergraduate research experience, and she is excited to join Dr. Zhu's lab.</p>
+      <p>Rylee Young is a sophomore at Texas Tech University and a proud member of the Honors College. She is pursuing a major in Chemical Engineering and a minor in Renewable Energy. Her current research focuses on pulsed electrocatalytic CO₂ reduction in an electrochemical cell, with the goal of converting CO₂ into valuable fuels and chemical feedstocks.</p>
+      <p>Outside the lab, Rylee is always eager to take on a new challenge. She enjoys spending time in nature, hiking, traveling, and exploring research in hydroponics and synthetic fuel production.</p>
     </div>
   </div>
 </dialog>
