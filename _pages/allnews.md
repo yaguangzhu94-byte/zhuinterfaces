@@ -58,7 +58,7 @@ permalink: /allnews.html
                    alt="{{ article.image_alt | escape }}"
                    {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
                    decoding="async"
-                   onerror="this.onerror=null;this.src='{{ '/images/News/ttu-campus-placeholder.svg' | relative_url }}';">
+                   onerror="this.onerror=null;this.src='{{ '/images/News/2026/01/ttu-campus-placeholder.svg' | relative_url }}';">
               {% if article.photo_credit %}
                 <figcaption>Photo: {{ article.photo_credit }}</figcaption>
               {% endif %}

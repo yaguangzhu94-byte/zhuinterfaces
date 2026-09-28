@@ -59,7 +59,7 @@ jobs:
                   f"({len(image_bytes):,} bytes; SHA-256 verified)"
               )
 
-          bnl_root = Path("images/News/20260724_BNL_HEX_hd")
+          bnl_root = Path("images/News/2026/07/_source/20260724_BNL_HEX_hd")
           reconstruct(
               [
                   bnl_root / "part-00.txt",
@@ -73,30 +73,9 @@ jobs:
                   bnl_root / "correct-08.txt",
                   bnl_root / "correct-09.txt",
               ],
-              Path("images/News/20260724_BNL_HEX_beamtime.webp"),
+              Path("images/News/2026/07/20260724_BNL_HEX_beamtime.webp"),
               "99259ad0d531fe7829af0d4b7e48681469addfcfa50f9d4b761f128421065dd2",
               {"part-03.txt": [("OvavaidQo8", "OvmaidQo8")]},
-          )
-
-          reu_root = Path("images/News/20260701_REU_fixed")
-          reconstruct(
-              [
-                  reu_root / "part-00.txt",
-                  reu_root / "part-01.txt",
-                  reu_root / "part-02.txt",
-                  reu_root / "part-03.txt",
-                  reu_root / "part-04.txt",
-                  reu_root / "part-05.txt",
-                  reu_root / "part-06.txt",
-                  reu_root / "part-07.txt",
-                  reu_root / "part-08.txt",
-                  reu_root / "part-09a.txt",
-                  reu_root / "part-09b.txt",
-                  reu_root / "part-10a.txt",
-                  reu_root / "part-10b.txt",
-              ],
-              Path("images/News/20260701_REU_v2.webp"),
-              "2c6ae0e2801dadbd78bd86cb757c010f179efbbf50a4a73b71554c4d13871d54",
           )
 
           rylee_root = Path("images/team/rylee-young-data")
