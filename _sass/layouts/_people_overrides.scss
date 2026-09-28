@@ -1,0 +1,8 @@
+// People-page refinements.
+// Rylee's year, Honors College affiliation, and minor are shown in her
+// expanded self-introduction rather than repeated beneath the profile card.
+.zhu-people-page > .people-section:nth-of-type(3)
+  .people-tile:nth-child(2)
+  .people-education {
+  display: none;
+}
