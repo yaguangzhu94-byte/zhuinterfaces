@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -97,19 +97,6 @@ jobs:
               "f16b3fc015271f1b3b67f84e1b4fca22544bb16aaf35fb251f60073b9d66b3a2",
           )
           PY
-
-      - name: Commit August group photo
-        run: |
-          image="images/News/2026/08/20260824_Zhu_Lab_Group.webp"
-          if git ls-files --error-unmatch "$image" >/dev/null 2>&1 && git diff --quiet -- "$image"; then
-            echo "August group photo is already committed."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$image"
-          git commit -m "Add August 2026 Zhu Lab group photo"
-          git push origin HEAD:source
 
       - name: Build site
         run: |
