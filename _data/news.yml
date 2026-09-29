@@ -1,5 +1,25 @@
 # News items for the Zhu Interfaces Lab.
 # Keep the newest item first.
+- date: "2026-08-24"
+  display_date: "August 24, 2026"
+  month: "AUG"
+  day: "24"
+  year: "2026"
+  category: "FALL 2026"
+  location: "LUBBOCK, TEXAS"
+  venue: "Texas Tech University"
+  headline: "Welcoming our first four students to the Zhu Lab"
+  summary: >-
+    As a new semester begins, we are excited to welcome Chuanqi Jia, Yan Zhao,
+    Isaac Acevedo, and Rylee Young as the first four students joining the Zhu Lab.
+  body: >-
+    Our new team brings together graduate and undergraduate researchers from
+    chemical, civil, and environmental engineering. We look forward to learning,
+    collaborating, and building the Zhu Lab together throughout the Fall 2026
+    semester and beyond.
+  image: "/images/News/2026/08/20260824_Zhu_Lab_Group.webp"
+  image_alt: "Prof. Yaguang Zhu with Chuanqi Jia, Isaac Acevedo, Rylee Young, and Yan Zhao on the Texas Tech University campus at the start of Fall 2026"
+
 - date: "2026-07-24"
   display_date: "July 24, 2026"
   month: "JUL"
