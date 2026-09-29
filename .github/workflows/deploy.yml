@@ -85,6 +85,23 @@ jobs:
               "d242d6d2ab2b6cf26457ab6ea302d4d442b42c9bd55116f830a9b8ec7010a7a9",
           )
 
+          people_group_root = Path("images/team/zhu-lab-group-fall-2026-data")
+          reconstruct(
+              [
+                  people_group_root / "part-00.txt",
+                  people_group_root / "part-01.txt",
+                  people_group_root / "part-02.txt",
+                  people_group_root / "part-03.txt",
+                  people_group_root / "part-04.txt",
+                  people_group_root / "part-05a.txt",
+                  people_group_root / "part-05b.txt",
+                  people_group_root / "part-05c.txt",
+                  people_group_root / "part-05d.txt",
+              ],
+              Path("images/team/zhu-lab-group-fall-2026.webp"),
+              "da8be6dc1337c833d530f4f6b49d304970d65e6248fe8648b8615a3939f06f2c",
+          )
+
           rylee_root = Path("images/team/rylee-young-data")
           reconstruct(
               [
