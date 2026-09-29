@@ -78,6 +78,13 @@ jobs:
               {"part-03.txt": [("OvavaidQo8", "OvmaidQo8")]},
           )
 
+          group_root = Path("images/News/2026/08/_source/20260824_Zhu_Lab_Group")
+          reconstruct(
+              [group_root / f"part-{index:02d}.txt" for index in range(10)],
+              Path("images/News/2026/08/20260824_Zhu_Lab_Group.webp"),
+              "d242d6d2ab2b6cf26457ab6ea302d4d442b42c9bd55116f830a9b8ec7010a7a9",
+          )
+
           rylee_root = Path("images/team/rylee-young-data")
           reconstruct(
               [
